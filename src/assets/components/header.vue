@@ -44,7 +44,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         height: 100px;
-        width: fit-content;
+        width: 100%;
     }
     .logo {
         font-size: 36px;
@@ -58,13 +58,11 @@ export default {
     }
     .themeToggle button {
         border-radius: 50%;
+        padding: 0.35em;
         border: 1px solid white;
         width: 52px;
         height: 52px;
         line-height: 52px; 
-    }
-    .themeToggle button img {
-        content: 'assets/images/moon.svg';
     }
     /* burger designs */
     .burger {
