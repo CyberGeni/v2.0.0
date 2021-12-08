@@ -184,7 +184,7 @@ export default {
         margin-left: 0.9em;
     }
     nav ul li .router-link-active {
-        color: black;
+        
     }
 
     /* media queries (the sweet part)*/

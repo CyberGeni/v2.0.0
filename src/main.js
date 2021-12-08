@@ -8,14 +8,6 @@ import Projects from './assets/components/projects.vue'
 import MiniBlog from './assets/components/blog.vue'
 import Contact from './assets/components/contact.vue'
 
-// Vue init
-
-new Vue({
-  el: '#app',
-  render: h => h(App),
-  router: router
-})
-
 // Router init
 
 Vue.use(VueRouter);
@@ -28,4 +20,12 @@ const router = new VueRouter({
     {path: '/contact', component: Contact}
   ],
   mode : 'history'
+})
+
+// Vue init
+
+new Vue({
+  el: '#app',
+  render: h => h(App),
+  router: router,
 })
