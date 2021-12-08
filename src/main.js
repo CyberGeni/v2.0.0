@@ -13,7 +13,6 @@ import Contact from './assets/components/contact.vue'
 Vue.use(VueRouter);
 const router = new VueRouter({
   routes : [
-    {path: '/', component: App},
     {path: '/blog', component: MiniBlog},
     {path: '/about', component: About},
     {path: '/projects', component: Projects},
