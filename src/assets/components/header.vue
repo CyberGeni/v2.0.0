@@ -22,7 +22,7 @@
                 <ul>
                     <router-link to="/"><li>Home</li></router-link>
                     <li><router-link to="/about">About</router-link></li>
-                    <li><router-link to="/project">Projects</router-link></li>
+                    <li><router-link to="/projects">Projects</router-link></li>
                     <li><router-link to="/blog">Mini Blog</router-link></li>
                     <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
@@ -35,7 +35,7 @@
                     <ul>
                         <li><router-link to="/">Home</router-link></li>
                         <li><router-link to="/about">About</router-link></li>
-                        <li><router-link to="/project">Projects</router-link></li>
+                        <li><router-link to="/projects">Projects</router-link></li>
                         <li><router-link to="/blog">Mini Blog</router-link></li>
                         <li><router-link to="/contact">Contact</router-link></li>
                     </ul>
