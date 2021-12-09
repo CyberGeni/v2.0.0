@@ -52,7 +52,7 @@
 // navbar show on click link 
 
 function toggleNavbar() {
-    var navbar = document.getElementsByTagName("nav")
+    var navbar = document.getElementsByTagName("nav");
     if (navbar.style.display === "none") {
         navbar.style.display = "flex";
     } else {
