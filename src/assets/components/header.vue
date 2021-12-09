@@ -8,7 +8,7 @@
                         <button onclick="changeTheme()" class="themeToggler"><img src="src\assets\images\sun.svg" alt="Dark Theme"></button>
                     </div>
                     <div class="burger">
-                        <button id="navbarToggler" @click="nav = !nav">
+                        <button id="navbarToggler" onclick="toggleNavbar()">
                             <router-link to="#nav">
                                 <div class="line"></div>
                                 <div class="line"></div>
@@ -18,7 +18,7 @@
                     </div>
                 </div>            
             </header>
-            <nav id="nav" v-if="nav">
+            <nav id="nav">
                 <ul>
                     <router-link to="/"><li>Home</li></router-link>
                     <li><router-link to="/about">About</router-link></li>
@@ -50,11 +50,14 @@
     </div>
 </template>
 <script>
-
+var navbar = document.querySelector('#nav');
+function toggleNavbar () {
+    navbar.style.display = 'none'
+}
 export default {
     data() {
         return {
-            nav: ''
+
         }
     },
 }
@@ -179,12 +182,16 @@ export default {
         font-size: 22px;
         color: #a9adc1;
     }
-
+    .headerForDesktop nav ul li {
+        display: flex;
+        font-size: 22px;
+        color: #b2b4bb;
+    }
     .headerForDesktop nav ul > * + * {
         margin-left: 0.9em;
     }
     nav ul li .router-link-active {
-        
+        color: white;
     }
 
     /* media queries (the sweet part)*/
