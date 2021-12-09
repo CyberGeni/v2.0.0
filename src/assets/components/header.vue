@@ -9,18 +9,16 @@
                     </div>
                     <div class="burger">
                         <button id="navbarToggler" onclick="toggleNavbar()">
-                            <router-link to="#nav">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </router-link> 
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
                         </button>                                     
                     </div>
                 </div>            
             </header>
             <nav id="nav">
                 <ul>
-                    <router-link to="/"><li>Home</li></router-link>
+                    <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/about">About</router-link></li>
                     <li><router-link to="/projects">Projects</router-link></li>
                     <li><router-link to="/blog">Mini Blog</router-link></li>
@@ -33,11 +31,11 @@
                 <div class="logo">Treasure A.</div>
                 <nav id="nav">
                     <ul>
-                        <li><router-link to="/">Home</router-link></li>
-                        <li><router-link to="/about">About</router-link></li>
-                        <li><router-link to="/projects">Projects</router-link></li>
-                        <li><router-link to="/blog">Mini Blog</router-link></li>
-                        <li><router-link to="/contact">Contact</router-link></li>
+                        <router-link to="/" exact><li>Home</li></router-link>
+                        <router-link to="/about" exact><li>About</li></router-link>
+                        <router-link to="/projects" exact><li>Projects</li></router-link>
+                        <li><router-link to="/blog" exact>Mini Blog</router-link></li>
+                        <li><router-link to="/contact" exact>Contact</router-link></li>
                     </ul>
                 </nav>
                 <div class="menu">
@@ -50,9 +48,9 @@
     </div>
 </template>
 <script>
-var navbar = document.querySelector('#nav');
+
 function toggleNavbar () {
-    navbar.style.display = 'none'
+    return document.getElementById('#nav').style.display = "none";
 }
 export default {
     data() {
@@ -92,7 +90,7 @@ export default {
         line-height: 52px; 
     }
     /* burger designs */
-    .burger button {
+     button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -102,12 +100,15 @@ export default {
         width: 52px;
         height: 52px;
     }
-    .burger .line {
-        width: 22px;
+    .line {
+        width: 26px;
         height: 2px;
         background-color: white;
-        margin: 5px;
+        margin: 2px;
         border-radius: 8px;
+    }
+    .line:nth-child(odd) {
+        width: 14px;
     }
     /* burger changing to x while active */
 
@@ -126,6 +127,14 @@ export default {
         padding-left: 1em;
         border-top: 1px solid #ccc;
         line-height: 70px;
+    }
+    .headerForMobile a {
+        color: white;
+        transition: 0.3s;
+    }
+    .headerForMobile a:hover {
+        padding-left: 1rem;
+        
     }
     @keyframes fadeIn {
         from {
@@ -179,21 +188,23 @@ export default {
     }
     .headerForDesktop nav ul {
         display: flex;
-        font-size: 22px;
-        color: #a9adc1;
-    }
-    .headerForDesktop nav ul li {
-        display: flex;
-        font-size: 22px;
-        color: #b2b4bb;
+        font-size: 20px;
     }
     .headerForDesktop nav ul > * + * {
         margin-left: 0.9em;
     }
-    nav ul li .router-link-active {
-        color: white;
+    .headerForDesktop a {
+        color: #a9adc1;
+        transition: 0.25s ease-in-out;
     }
-
+    .headerForDesktop a:hover {
+        color: #fff;
+        font-size: 22px;
+    }
+    .headerForDesktop a.router-link-active {
+        color: white;
+        font-size: 21px;
+    }
     /* media queries (the sweet part)*/
     @media (min-width: 720px) {
         .headerForMobile {

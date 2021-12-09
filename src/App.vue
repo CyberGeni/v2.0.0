@@ -37,7 +37,6 @@ export default {
     list-style: none;
   }
   a {
-    color: white;
     text-decoration: none;
   }
   button {
