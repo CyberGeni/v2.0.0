@@ -18,11 +18,11 @@
             </header>
             <nav id="nav" v-if="toggled">
                 <ul>
-                    <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/about">About</router-link></li>
-                    <li><router-link to="/projects">Projects</router-link></li>
-                    <li><router-link to="/blog">Mini Blog</router-link></li>
-                    <li><router-link to="/contact">Contact</router-link></li>
+                    <router-link to="/" ><li @click="toggled = !toggled">Home</li></router-link>
+                    <router-link to="/about"><li @click="toggled = !toggled">About</li></router-link>
+                    <router-link to="/projects"><li @click="toggled = !toggled">Projects</li></router-link>
+                    <router-link to="/blog"><li @click="toggled = !toggled">Mini Blog</li></router-link>
+                    <router-link to="/contact"><li @click="toggled = !toggled">Contact</li></router-link>
                 </ul>
             </nav>
         </div>
@@ -138,6 +138,7 @@ export default {
     .headerForMobile nav {
         display: flex;
         align-items: stretch;
+        z-index: 100;      
         min-height: 100%;
         transition: 2s ease-in;
         animation: fadeIn 1.2s;
