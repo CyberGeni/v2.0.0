@@ -8,7 +8,7 @@
                         <button onclick="changeTheme()" class="themeToggler"><img src="src\assets\images\sun.svg" alt="Dark Theme"></button>
                     </div>
                     <div class="burger">
-                        <button id="navbarToggler" onclick="toggleNavbar()">
+                        <button @click="toggled = !toggled" id="navbarToggler" :class="{activenav : toggled}">
                             <div class="line"></div>
                             <div class="line"></div>
                             <div class="line"></div>
@@ -16,7 +16,7 @@
                     </div>
                 </div>            
             </header>
-            <nav id="nav">
+            <nav id="nav" v-if="toggled">
                 <ul>
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/about">About</router-link></li>
@@ -51,21 +51,13 @@
 
 // navbar show on click link 
 
-function toggleNavbar() {
-    var navbar = document.getElementsByTagName("nav");
-    if (navbar.style.display === "none") {
-        navbar.style.display = "flex";
-    } else {
-        navbar.style.display = "none";
-    }
-}
 
 // close navbar when user clicks a link 
 
 export default {
     data() {
         return {
- 
+            toggled: false
         }
     },
 
@@ -100,7 +92,9 @@ export default {
         height: 52px;
         line-height: 52px; 
     }
+
     /* burger designs */
+
      button {
         display: flex;
         align-items: center;
@@ -117,18 +111,32 @@ export default {
         background-color: white;
         margin: 2px;
         border-radius: 8px;
-    }
-    .navBurgerActive .line:nth-child(odd) {
-        transform: rotate(45deg);
+        transition: 0.5s ease-in-out;
     }
     .line:nth-child(odd) {
         width: 15px;
     }
+
     /* burger changing to x while active */
 
+    .activenav .line:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+        width: 22px;
+    }
+    .activenav .line:nth-child(2) {
+        opacity: 0;
+    }
+    .activenav .line:nth-child(3) {
+        position: absolute;
+        transform: rotate(135deg);
+        width: 22px;
+    }
+
     /* navigation listings */
+
     .headerForMobile nav {
-        display: none;
+        display: flex;
         align-items: stretch;
         min-height: 100%;
         transition: 2s ease-in;
