@@ -49,15 +49,26 @@
 </template>
 <script>
 
-function toggleNavbar () {
-    return document.getElementById('#nav').style.display = "none";
+// navbar show on click link 
+
+function toggleNavbar() {
+    var navbar = document.getElementsByTagName("nav")
+    if (navbar.style.display === "none") {
+        navbar.style.display = "flex";
+    } else {
+        navbar.style.display = "none";
+    }
 }
+
+// close navbar when user clicks a link 
+
 export default {
     data() {
         return {
-
+ 
         }
     },
+
 }
 </script>
 <style scoped>
@@ -107,14 +118,17 @@ export default {
         margin: 2px;
         border-radius: 8px;
     }
+    .navBurgerActive .line:nth-child(odd) {
+        transform: rotate(45deg);
+    }
     .line:nth-child(odd) {
-        width: 14px;
+        width: 15px;
     }
     /* burger changing to x while active */
 
     /* navigation listings */
     .headerForMobile nav {
-        display: flex;
+        display: none;
         align-items: stretch;
         min-height: 100%;
         transition: 2s ease-in;
@@ -199,7 +213,7 @@ export default {
     }
     .headerForDesktop a:hover {
         color: #fff;
-        font-size: 22px;
+        font-size: 21px;
     }
     .headerForDesktop a.router-link-active {
         color: white;
