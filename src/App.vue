@@ -1,6 +1,6 @@
 <template>
-  <div id="app">  
-    <main>
+  <div id="app" >  
+    <main :class="{darkTheme: darkTheme}">
       <app-header></app-header>    
       <router-view></router-view>
     </main>      
@@ -12,6 +12,7 @@
 import Header from './assets/components/header.vue'
 
 export default {
+  name: 'App',
   components: {
     'app-header': Header
   },
@@ -20,7 +21,8 @@ export default {
     return {
 
     }
-  }
+  },
+  
 }
 </script>
 
@@ -44,10 +46,16 @@ export default {
   }
   body {
     background-color: #1f2028;
-    color: white;
+    color: #fff;
   }
   main {
     width: 95%;
     margin: auto;
   }
+  /* dark theme settings */
+
+/*   .darkTheme body {
+    background-color: #1f2028;
+    color:white;
+  } */
 </style>

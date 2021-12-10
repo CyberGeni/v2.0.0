@@ -1,12 +1,11 @@
 <template>
-    <div>
+    <div id="header" :class="{darkTheme: darkTheme}">
         <div class="headerForMobile">
             <header>
                 <div class="logo">Treasure A.</div>
                 <div class="menu">
-                    <div class="themeToggle">
-                        <button onclick="changeTheme()" class="themeToggler"><img src="src\assets\images\sun.svg" alt="Dark Theme"></button>
-                    </div>
+                    <button @click="darkTheme = !darkTheme" ><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
+
                     <div class="burger">
                         <button @click="toggled = !toggled" id="navbarToggler" :class="{activenav : toggled}">
                             <div class="line"></div>
@@ -40,7 +39,7 @@
                 </nav>
                 <div class="menu">
                     <div class="themeToggle">
-                        <button onclick="changeTheme()" class="themeToggler"><img src="src\assets\images\sun.svg" alt="Dark Theme"></button>
+                        <button @click="darkTheme = !darkTheme" ><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
                     </div>
                 </div>        
             </header>       
@@ -57,13 +56,16 @@
 export default {
     data() {
         return {
-            toggled: false
+            toggled: false,
+            darkTheme: false,
+            imageLight: 'src/assets/images/sun.svg',
+            imageDark: 'src/assets/images/moon.svg',
         }
     },
-
+    props: ['theme']
 }
 </script>
-<style scoped>
+<style>
     .headerForDesktop {
         display: none;
     }
@@ -84,18 +86,20 @@ export default {
     .menu > * + * {
         margin-left: 0.7em;
     }
-    .themeToggle button {
-        border-radius: 50%;
-        padding: 0.37em;
-        border: 1px solid white;
-        width: 52px;
-        height: 52px;
-        line-height: 52px; 
-    }
 
     /* burger designs */
 
-     button {
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+    }
+    .darkTheme button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -158,6 +162,12 @@ export default {
     .headerForMobile a:hover {
         padding-left: 1rem;
         
+    }
+
+    /* mediocre animations  */
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
     }
     @keyframes fadeIn {
         from {
@@ -237,5 +247,9 @@ export default {
             display: flex;
         }
     }
+
+    /* theme settings */
+
+
 </style>
     
