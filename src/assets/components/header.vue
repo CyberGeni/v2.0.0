@@ -4,7 +4,7 @@
             <header>
                 <div class="logo">Treasure A.</div>
                 <div class="menu">
-                    <button @click="darkTheme = !darkTheme" ><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
+                    <button @click="changeTheme()"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
 
                     <div class="burger">
                         <button @click="toggled = !toggled" id="navbarToggler" :class="{activenav : toggled}">
@@ -62,7 +62,14 @@ export default {
             imageDark: 'src/assets/images/moon.svg',
         }
     },
-    props: ['theme']
+    props: {
+        theme: Boolean
+    },
+    methods: {
+        changeTheme () {
+            this.$emit('changeTheme')
+        }
+    },
 }
 </script>
 <style>
