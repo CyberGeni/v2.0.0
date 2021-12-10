@@ -1,6 +1,6 @@
 <template>
   <div id="app" >  
-    <main :class="{darkTheme: darkTheme}">
+    <main>
       <app-header></app-header>    
       <router-view></router-view>
     </main>      
@@ -16,13 +16,11 @@ export default {
   components: {
     'app-header': Header
   },
-  name: 'app',
   data () {
     return {
 
     }
   },
-  
 }
 </script>
 
@@ -54,8 +52,4 @@ export default {
   }
   /* dark theme settings */
 
-/*   .darkTheme body {
-    background-color: #1f2028;
-    color:white;
-  } */
 </style>

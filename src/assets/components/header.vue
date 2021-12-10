@@ -1,5 +1,5 @@
 <template>
-    <div id="header" :class="{darkTheme: darkTheme}">
+    <div id="header">
         <div class="headerForMobile">
             <header>
                 <div class="logo">Treasure A.</div>
@@ -61,15 +61,7 @@ export default {
             imageLight: 'src/assets/images/sun.svg',
             imageDark: 'src/assets/images/moon.svg',
         }
-    },
-    props: {
-        theme: Boolean
-    },
-    methods: {
-        changeTheme () {
-            this.$emit('changeTheme')
-        }
-    },
+    }
 }
 </script>
 <style>
@@ -80,7 +72,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
+        height: 120px;
         width: 100%;
     }
     .logo {
@@ -195,7 +187,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
+        height: 120px;
         width: 100%;
     }
     .logo {
