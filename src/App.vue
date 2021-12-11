@@ -3,6 +3,7 @@
     <main>
       <app-header></app-header>    
       <router-view></router-view>
+      <button class="resume"><a href="https://cybergeni.github.io/cssCV">Visit my resume</a></button>
     </main>      
   </div>
 </template>
@@ -49,6 +50,22 @@ export default {
   main {
     width: 95%;
     margin: auto;
+  }
+  .resume {
+    border: none;
+    background-color: #2e3039;
+    padding: 6px 12px;
+    position: fixed;
+    bottom: 36px;
+    right: 24px;
+    opacity: 0.85;
+  }
+  .resume a {
+    border: none;
+    background-color: #2e3039;
+    color: #a9adc1;
+    font-size: 16px;
+    font-weight: 600;
   }
   /* dark theme settings */
 

@@ -88,7 +88,7 @@ export default {
 
     /* burger designs */
 
-    button {
+    header button {
         display: flex;
         align-items: center;
         justify-content: center;
