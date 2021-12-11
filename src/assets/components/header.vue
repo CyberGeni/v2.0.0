@@ -1,6 +1,6 @@
 <template>
-    <div id="header">
-        <div class="headerForMobile">
+    <div id="header" :class="{activenav : toggled}">
+        <div class="headerForMobile" >
             <header>
                 <div class="logo">Treasure A.</div>
                 <div class="menu">
@@ -141,10 +141,12 @@ export default {
     .headerForMobile nav {
         display: flex;
         align-items: stretch;
-        z-index: 100;      
-        min-height: 100%;
+        z-index: 100;   
+        width: 100%;   
+        height: 100vh;
         transition: 2s ease-in;
         animation: fadeIn 1.2s;
+        position: absolute;
     }
     nav ul {
         width: 100%; 
@@ -163,6 +165,24 @@ export default {
         
     }
 
+    /* overflow hidden while active */
+    #header.activenav{
+        overflow-y: hidden;
+    }
+    body.activenav {
+        overflow: hidden;
+    }
+    .activenav header {
+        background-color: #1f2028;
+        overflow: hidden;
+        position: fixed;
+        z-index: 10000;
+    }
+    .activenav nav  {
+        margin-top: 120px;
+        background: #1f2028;
+        position: fixed;
+    }
     /* mediocre animations  */
 
     .fade-enter-active, .fade-leave-active {
