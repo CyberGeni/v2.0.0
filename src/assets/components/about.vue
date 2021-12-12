@@ -6,16 +6,21 @@
             <p>Other than Frontend dev, I also code in Python, trying to solve some algorithmic questions.</p>
 
             <h1>Skills</h1>
-            <p>To be continued...</p>
+            <skills></skills>
             
         </main>    
     </div>
 </template>
+
 <script>
+import Skills from './skills.vue'
 export default {
-    
+    components: {
+        'skills': Skills
+    }
 }
 </script>
+
 <style scoped>
     p {
         color: #a9adc1;

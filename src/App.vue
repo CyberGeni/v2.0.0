@@ -67,6 +67,20 @@ export default {
     font-size: 16px;
     font-weight: 600;
   }
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    padding: 2px;
+    background-color: #2e3039;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #414453;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-button {
+    height: 0px;
+  }
   /* dark theme settings */
 
 </style>

@@ -6,7 +6,7 @@
                 <h2 :key="project.id">{{project.title}}</h2>
                 <p>{{project.description}}</p>
                 <div class="links">
-                    <button><a :href="liveLink">Check it out</a></button>
+                    <button><a :href="project.liveLink" target="_blank">Check it out</a></button>
                     <router-link to=""><img src="/src/assets/images/info.svg" alt=""></router-link>
                 </div> 
             </div>
@@ -20,13 +20,13 @@ export default {
         return {
             projects: [
                 {
-                    image: '/src/assets/images/portfolio.png',
-                    title: 'devicespex',
-                    description: 'A simple software to help you spend your money wisely when choosing to buy a device. Read more...',
-                    liveLink: '',
+                    image: '/src/assets/images/riskfree.png',
+                    title: 'RiskFree',
+                    description: 'An overthinking tracking application that helps you control overthinking. (prototype)',
+                    liveLink: 'https://riskfreeapp.netlify.app',
                     projectInfo: '',
                     tag: 'featured',
-                    id: 2
+                    id: 1
                 },
 
                 {
@@ -37,7 +37,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: 'featured',
-                    id: 1
+                    id: 2
                 },
 
                 {
@@ -47,7 +47,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: 'featured',
-                    id: 2
+                    id: 3
                 }
 
                 
@@ -90,6 +90,9 @@ export default {
         font-size: 1.2em;
         font-weight: 500;
     }
+    a {
+        color: white;
+    }
     .info {
         padding: 0.2em 0.7em;
     }
@@ -109,7 +112,7 @@ export default {
         font-size: 18px;
     }
     .links button:hover {
-        background-color: #a9adc1;
+        background-color: #cccfdb5b;
         color: #1f2028;
         border: 1px solid transparent;
     }
@@ -118,7 +121,7 @@ export default {
         main:hover {
             background-color: transparent;
             box-shadow: 0px 0px 20px 4px #2e3039;
-            transform: translateY(-36px);
+            transform: translateY(-24px);
         }
     }
 </style>
