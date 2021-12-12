@@ -64,12 +64,12 @@ export default {
     }
     .skill img {
         width: 72px;
-        margin: 1.5em;
+        margin: 1.5em 0;
     }
     progress {
         -webkit-appearance: none;
         height: 8px;
-        width: 120px;
+        width: 80%;
         
     }
     ::-webkit-progress-bar {
