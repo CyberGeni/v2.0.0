@@ -45,6 +45,9 @@ export default {
     }
 
 /* projects */
+    .projects {
+        margin-bottom: 10em 0;
+    }
     .projects h1 {
         font-size: 1.8em;
     }  
@@ -96,6 +99,7 @@ export default {
         .projects {
             align-content: center;
             min-height: 80vh;
+            margin-bottom: 2em;
         }
     }
 </style>

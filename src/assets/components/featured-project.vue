@@ -113,4 +113,11 @@ export default {
         color: #1f2028;
         border: 1px solid transparent;
     }
+    @media  (min-width: 1024px) {
+        main:hover {
+            background-color: transparent;
+            box-shadow: 0px 0px 20px 4px #2e3039;
+            transform: translateY(-36px);
+        }
+    }
 </style>
