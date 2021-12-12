@@ -21,7 +21,7 @@
     </div>
 </template>
 <script>
-import Featured from './featured-project.vue'
+import Featured from './project/featured-project.vue'
 export default {
     components: {
         'featured': Featured

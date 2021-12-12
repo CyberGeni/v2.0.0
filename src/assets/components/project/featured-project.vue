@@ -113,6 +113,7 @@ export default {
         color: #1f2028;
         border: 1px solid transparent;
     }
+    /* media queries */
     @media  (min-width: 1024px) {
         main:hover {
             background-color: transparent;

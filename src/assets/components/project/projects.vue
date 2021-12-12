@@ -63,15 +63,16 @@ export default {
     }
     main {
         width: 100%;
-        height: max-content;
         max-width: 380px;
         margin: 1em auto;
         background-color: #2e3039;
         padding: 10px;
         border-radius: 12px;
+        transition: 200ms ease-in-out;
     }
-    main > * + * {
-        margin-right: 0.8em;
+    main:hover {
+        background-color: transparent;
+        box-shadow: 0px 0px 20px 4px #2e3039;       
     }
     h2 {
         margin: 0.5em 0;
@@ -107,5 +108,13 @@ export default {
         background-color: #a9adc1;
         color: #1f2028;
         border: 1px solid transparent;
+    }
+    /* media queries */
+    @media  (min-width: 1024px) {
+        main:hover {
+            background-color: transparent;
+            box-shadow: 0px 0px 20px 4px #2e3039;
+            transform: translateY(-28px);
+        }
     }
 </style>
