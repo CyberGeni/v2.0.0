@@ -52,11 +52,12 @@ export default {
         flex-direction: column;
         justify-content: center;
         padding: 1em;
-        margin: 2em 0.5em;
+        margin: 2em 0.1em;
         width: 100%;
-        max-width: 180px;
+        max-width: 160px;
         background-color: #2e3039;
         border-radius: 8px;
+        transition: 1.3s ease;
     }
     .skill p {
         font-size: 20px;
@@ -66,11 +67,12 @@ export default {
         width: 72px;
         margin: 1.5em 0;
     }
+
+    /* override default styling for progress bar */
     progress {
         -webkit-appearance: none;
         height: 8px;
         width: 80%;
-        
     }
     ::-webkit-progress-bar {
         border-radius: 24px;
@@ -103,5 +105,13 @@ export default {
     .github ::-webkit-progress-value {
         border-radius: 24px;
         background-color: white;
+    }
+
+    /* media queries */
+
+    @media (min-width: 600px) {
+        .skill {
+            max-width: 180px;
+        }
     }
 </style>
