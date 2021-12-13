@@ -177,6 +177,7 @@ export default {
         overflow: hidden;
         position: fixed;
         z-index: 10000;
+        width: 95%;
     }
     .activenav nav  {
         margin-top: 120px;
