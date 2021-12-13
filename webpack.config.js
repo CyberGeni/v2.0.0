@@ -53,7 +53,24 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  
+  configureWebpack: () => {
+    if (process.env.NODE_ENV !== 'production') return;
+    return {
+      plugins: [
+        new PrerenderSPAPlugin(
+          // Absolute path to compiled SPA
+          path.resolve(__dirname, 'dist'),
+          // List of routes to prerender
+          [ '/'],
+          {
+            // options
+          }
+        ),
+      ]
+    }
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {

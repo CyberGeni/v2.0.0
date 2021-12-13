@@ -8,7 +8,7 @@
                     <input type="email" name="email" placeholder="Your email here"  required>
                 </div>
                 <textarea name="message" id="" cols="30" rows="8" placeholder="Your message here..." required></textarea>
-                <button type="submit">Send Message</button>
+                <button>Send Message</button>
             </form>
         </div>
         <div class="demarcation">
