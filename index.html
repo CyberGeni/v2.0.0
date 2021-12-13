@@ -37,6 +37,14 @@
   <body>
 
     <div id="app"></div>
+    <form netlify name="contact" method="post" netlify-honeypot="bot-field">
+      <div class="short-input">
+          <input type="text" name="name" placeholder="Your name here ..."  required>
+          <input type="email" name="email" placeholder="Your email here"  required>
+      </div>
+      <textarea name="message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
+      <button>Send Message</button>
+  </form>
     <script src="/dist/build.js"></script>
     
   </body>

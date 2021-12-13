@@ -7,7 +7,7 @@
                     <input type="text" name="name" placeholder="Your name here ..."  required>
                     <input type="email" name="email" placeholder="Your email here"  required>
                 </div>
-                <textarea name="message" id="" cols="30" rows="8" placeholder="Your message here..." required></textarea>
+                <textarea name="message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
                 <button>Send Message</button>
             </form>
         </div>
@@ -111,6 +111,7 @@ export default {
     }
     textarea {
         width: 100%;
+        columns: 10;
         background-color: #2e3039;
         border: none;
         border-radius: 6px;
