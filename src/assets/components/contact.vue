@@ -2,7 +2,7 @@
     <div>
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
-            <form netlify name="contact" method="post" netlify-honeypot="bot-field">
+            <form netlify name="Contact" method="POST" netlify-honeypot="bot-field">
                 <div class="short-input">
                     <input type="text" name="name" placeholder="Your name here ..."  required>
                     <input type="email" name="email" placeholder="Your email here"  required>
