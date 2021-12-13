@@ -2,12 +2,12 @@
     <div>
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
-            <form name="contact" netlify>
+            <form name="contact" netlify netlify-honeypot="bot-field">
                 <div class="short-input">
                     <input type="text" placeholder="Your name here ..." name="name" required>
                     <input type="email" placeholder="Your email here" name="email" required>
                 </div>
-                <textarea name="Message" id="" cols="30" rows="8" placeholder="Your message here..." required></textarea>
+                <textarea name="message" id="" cols="30" rows="8" placeholder="Your message here..." required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>

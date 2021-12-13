@@ -36,6 +36,8 @@ const router = new VueRouter({
     {path: '/about', component: About},
     {path: '/projects', component: Projects},
     {path: '/contact', component: Contact},
+
+    // error handlers
     // mediocre routing of project information components
     {path: '/projects/project-info/devicespex', component: devicespex},
     {path: '/contact', component: Contact},
