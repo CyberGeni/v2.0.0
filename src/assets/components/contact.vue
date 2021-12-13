@@ -16,25 +16,48 @@
             <p>or</p>
             <div class="line"></div>
         </div>
-    <!--    <div class="socials">
+        <div class="socials">
             <section>
-                
-            </section>
-            <section>
-                
-            </section>
-        </div> -->
-        <div class="message">
-            <img src="src/assets/images/emoji-wink.png" alt="">
-            <form action="" data-netlify>
-                <div class="short-input">
-                    <input type="text" placeholder="Your name here ..." name="Name">
-                    <input type="email" placeholder="Your email here" name="Email">
+                <div>
+                    <a href="mailto:treasureajefu@gmail.com">
+                        <img src="src/assets/images/mail.svg" alt="">
+                        <p>Send an email</p>
+                    </a>
                 </div>
-                <textarea name="Message" id="" cols="30" rows="8" placeholder="Your message here..."></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+               <div>
+                    <a href="https://wa.me/2349098746099">
+                        <img src="src/assets/images/whatsapp.png" alt="">
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:treasureajefu@gmail.com">
+                        <img src="src/assets/images/twitter.svg" alt="">
+                        <p>Twitter (@cybergenie_)</p>
+                    </a>   
+                </div>
+            </section>
+            <section>
+                <div>
+                    <a href="https://github.com/cybergeni">
+                        <img src="src/assets/images/github.svg" alt="">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+               <div>
+                    <a href="https://wa.me/2349098746099">
+                        <img src="src/assets/images/linkedin.svg" alt="">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:treasureajefu@gmail.com">
+                        <img src="src/assets/images/twitter.svg" alt="">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+            </section>
+        </div> 
     </div>
 </template>
 <script>
@@ -132,7 +155,31 @@ export default {
         font-weight: 600;
         color: white;
     }
-
+    /* social section */
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    section div a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+    section > * + * {
+        margin-top: 1em;
+    }
+    .socials img {
+        width: 30px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        display: flex;
+    }
+    .socials p {
+        color: #a9adc1;
+        align-self: center;
+    }
     /* media queries */
 
     @media (min-width: 720px) {
@@ -155,6 +202,15 @@ export default {
             display: flex;
             width: 4px;
             height: 240px;
+        }
+        .socials {
+            display: flex;
+            flex-direction: column !important;
+            width: 30%;
+        }
+        .socials a {
+            width: 200px;
+            justify-content: start;
         }
     }
 </style>

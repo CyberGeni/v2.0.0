@@ -59,8 +59,6 @@ export default {
     color: #a9adc1;
     width: 100%;
     margin-top: 1em;
-    position: relative;
-    z-index: 100000;
   }
   .resume {
     border: none;
