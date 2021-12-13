@@ -34,18 +34,16 @@
     
   </head>
 
-  <body>
-
-    <div id="app"></div>
-    <form netlify name="contact" method="post" netlify-honeypot="bot-field">
+  <body>  
+    <form netlify name="contact" method="post" netlify-honeypot="bot-field" hidden>
       <div class="short-input">
           <input type="text" name="name" placeholder="Your name here ..."  required>
           <input type="email" name="email" placeholder="Your email here"  required>
       </div>
       <textarea name="message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
-      <button>Send Message</button>
+      <button type="submit">Send Message</button>
   </form>
+  <div id="app"></div>
     <script src="/dist/build.js"></script>
-    
   </body>
 </html>
