@@ -107,6 +107,10 @@ export default {
         border-radius: 6px;
         background-color: #2e3039;
         color: white;
+        transition: 0.3s ease;
+    }
+    button:hover {
+        font-size: 15px;
     }
     /* demarcation in the middle (lines) */
 
