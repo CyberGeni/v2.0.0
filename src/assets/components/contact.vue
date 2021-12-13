@@ -59,7 +59,7 @@ export default {
         display: flex;
     }
     .message img {
-        width: 160px;
+        width: 156px;
         height: fit-content;
         margin: 1em auto;
     }
@@ -74,7 +74,7 @@ export default {
         background-color: #2e3039;
         border: none;
         border-radius: 6px;
-        padding: 16px;
+        padding: 12px;
         color: white;
         font-size: 16px;
     }
@@ -91,7 +91,7 @@ export default {
         background-color: #2e3039;
         border: none;
         border-radius: 6px;
-        padding: 16px;
+        padding: 14px;
         margin: 1em 0;
         color: white;
         font-size: 16px;
@@ -101,7 +101,7 @@ export default {
         justify-content: center;
         width: 80%;
         max-width: 350px;
-        padding: 12px;
+        padding: 10px;
         margin: auto;
         border: none;
         border-radius: 6px;

@@ -58,6 +58,7 @@ export default {
     background-color: #2e3039;
     color: #a9adc1;
     width: 100%;
+    margin-top: 1em;
     position: relative;
     z-index: 100000;
   }
