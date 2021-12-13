@@ -30,9 +30,9 @@ export default {
                 },
 
                 {
-                    image: '/src/assets/images/portfolio.png',
-                    title: 'Portfolio',
-                    imageDescription: 'My portfolio site preview',
+                    image: '/src/assets/images/fylo.jpg',
+                    title: 'Fylo',
+                    imageDescription: 'Fylo data storage landing page',
                     description: 'A version of my portfolio website created with Vue.js. This is/was the first version that ever got publicized.',
                     liveLink: '',
                     projectInfo: '',
