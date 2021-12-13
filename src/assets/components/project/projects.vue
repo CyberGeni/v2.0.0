@@ -6,7 +6,7 @@
                 <h2 :key="project.id">{{project.title}}</h2>
                 <p>{{project.description}}</p>
                 <div class="links">
-                    <button><a :href="liveLink">Check it out</a></button>
+                    <button><a :href="liveLink" target="_blank">Check it out</a></button>
                     <router-link to=""><img src="/src/assets/images/info.svg" alt=""></router-link>
                 </div> 
             </div>

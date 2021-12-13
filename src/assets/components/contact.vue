@@ -2,12 +2,12 @@
     <div>
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
-            <form action="" data-netlify>
+            <form name="Contact" netlify>
                 <div class="short-input">
-                    <input type="text" placeholder="Your name here ..." name="Name">
-                    <input type="email" placeholder="Your email here" name="Email">
+                    <input type="text" placeholder="Your name here ..." name="Name" required>
+                    <input type="email" placeholder="Your email here" name="Email" required>
                 </div>
-                <textarea name="Message" id="" cols="30" rows="8" placeholder="Your message here..."></textarea>
+                <textarea name="Message" id="" cols="30" rows="8" placeholder="Your message here..." required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -25,13 +25,13 @@
                     </a>
                 </div>
                <div>
-                    <a href="https://wa.me/2349098746099">
+                    <a href="https://wa.me/2349098746099" target="_blank">
                         <img src="src/assets/images/whatsapp.png" alt="">
                         <p>WhatsApp</p>
                     </a>
                 </div>
                 <div>
-                    <a href="mailto:treasureajefu@gmail.com">
+                    <a href="https://twitter.com/cybergenie_" target="_blank">
                         <img src="src/assets/images/twitter.svg" alt="">
                         <p>Twitter (@cybergenie_)</p>
                     </a>   

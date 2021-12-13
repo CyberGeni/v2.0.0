@@ -3,7 +3,7 @@
     <main>
       <app-header></app-header>    
       <router-view></router-view>
-      <button class="resume"><a href="https://cybergeni.github.io/cssCV">Visit my resume</a></button>
+      <button class="resume"><a href="https://cybergeni.github.io/cssCV" target="_blank">Visit my resume</a></button>
     </main> 
     <footer>cyberGenie 2021 &copy Treasure Ajefu </footer>     
   </div>
