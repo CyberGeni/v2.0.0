@@ -4,7 +4,8 @@
       <app-header></app-header>    
       <router-view></router-view>
       <button class="resume"><a href="https://cybergeni.github.io/cssCV">Visit my resume</a></button>
-    </main>      
+    </main> 
+    <footer>cyberGenie 2021 &copy Treasure Ajefu </footer>     
   </div>
 </template>
 
@@ -50,6 +51,15 @@ export default {
   main {
     width: 95%;
     margin: auto;
+  }
+  footer {
+    text-align: center;
+    line-height: 36px;
+    background-color: #2e3039;
+    color: #a9adc1;
+    width: 100%;
+    position: relative;
+    z-index: 100000;
   }
   .resume {
     border: none;

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="message">
-            <img src="src/assets/images/emoji-wink.png" alt="">
+            <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
             <form action="" data-netlify>
                 <div class="short-input">
                     <input type="text" placeholder="Your name here ..." name="Name">
@@ -61,7 +61,7 @@ export default {
     .message img {
         width: 160px;
         height: fit-content;
-        margin: 1.5em auto;
+        margin: 1em auto;
     }
     .short-input {
         display: flex;
