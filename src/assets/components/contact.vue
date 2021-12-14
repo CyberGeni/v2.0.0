@@ -2,10 +2,10 @@
     <div>
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
-            <form netlify name="Contact" method="POST">
+            <form action="" netlify name="Contact" method="POST">
                 <div class="short-input">
                     <input type="text" name="name" placeholder="Your name here ..."  required>
-                    <input type="email" name="email" placeholder="Your email here"  required>
+                    <input type="email" name="email" placeholder="Your email here..."  required>
                 </div>
                 <textarea name="message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
                 <button type="submit">Send Message</button>
