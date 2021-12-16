@@ -33,7 +33,7 @@
                 <div>
                     <a href="https://twitter.com/cybergenie_" target="_blank">
                         <img src="src/assets/images/twitter.svg" alt="">
-                        <p>Twitter (@cybergenie_)</p>
+                        <p>Twitter</p>
                     </a>   
                 </div>
             </section>
