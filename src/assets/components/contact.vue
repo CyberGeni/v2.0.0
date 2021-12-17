@@ -53,7 +53,7 @@
                 <div>
                     <a href="mailto:treasureajefu@gmail.com">
                         <img src="src/assets/images/twitter.svg" alt="">
-                        <p>Twitter</p>
+                        <p>Instagram</p>
                     </a>
                 </div>
             </section>
