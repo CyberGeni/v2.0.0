@@ -20,20 +20,20 @@ export default {
         return {
             projects: [
                 {
-                    image: '/src/assets/images/portfolio.png',
-                    title: 'devicespex',
-                    description: 'A simple software to help you spend your money wisely when choosing to buy a device. Read more...',
+                    image: '',
+                    title: '',
+                    description: '',
                     liveLink: '',
                     projectInfo: '',
-                    tag: 'featured',
+                    tag: '',
                     id: 2
                 },
 
                 {
-                    image: '/src/assets/images/fylo.jpg',
-                    title: 'Fylo',
-                    imageDescription: 'Fylo data storage landing page',
-                    description: 'A version of my portfolio website created with Vue.js. This is/was the first version that ever got publicized.',
+                    image: '',
+                    title: '',
+                    imageDescription: '',
+                    description: '',
                     liveLink: '',
                     projectInfo: '',
                     tag: 'featured',
@@ -41,16 +41,64 @@ export default {
                 },
 
                 {
-                    image: '/src/assets/images/portfolio.png',
-                    title: 'LaBurtina',
-                    description: 'A responsive, lite version spice e-commerce website for a personal company.',
+                    image: '',
+                    title: '',
+                    description: '',
                     liveLink: '',
                     projectInfo: '',
-                    tag: 'featured',
+                    tag: '',
                     id: 2
-                }
+                },  
 
-                
+                {
+                    image: '',
+                    title: '',
+                    description: '',
+                    liveLink: '',
+                    projectInfo: '',
+                    tag: '',
+                    id: 2
+                },
+
+                {
+                    image: '',
+                    title: '',
+                    description: '',
+                    liveLink: '',
+                    projectInfo: '',
+                    tag: '',
+                    id: 2
+                },
+
+                {
+                    image: '',
+                    title: '',
+                    description: '',
+                    liveLink: '',
+                    projectInfo: '',
+                    tag: '',
+                    id: ''
+                },
+
+                {
+                    image: '',
+                    title: '',
+                    description: '',
+                    liveLink: '',
+                    projectInfo: '',
+                    tag: '',
+                    id: ''
+                },
+
+                {
+                    image: '',
+                    title: '',
+                    description: '',
+                    liveLink: '',
+                    projectInfo: '',
+                    tag: '',
+                    id: ''
+                },
             ]
         }
     }
@@ -60,11 +108,13 @@ export default {
     .projects {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     main {
         width: 100%;
-        max-width: 380px;
-        margin: 1em auto;
+
+        max-width: 360px;
+        margin: 1em;
         background-color: #2e3039;
         padding: 10px;
         border-radius: 12px;
@@ -114,7 +164,7 @@ export default {
         main:hover {
             background-color: transparent;
             box-shadow: 0px 0px 20px 4px #2e3039;
-            transform: translateY(-28px);
+            transform: translateY(-24px);
         }
     }
 </style>

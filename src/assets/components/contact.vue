@@ -45,14 +45,14 @@
                     </a>
                 </div>
                <div>
-                    <a href="https://wa.me/2349098746099">
+                    <a href="https://linkedin.com/in/treasure-ajefu">
                         <img src="src/assets/images/linkedin.svg" alt="">
                         <p>LinkedIn</p>
                     </a>
                 </div>
                 <div>
-                    <a href="mailto:treasureajefu@gmail.com">
-                        <img src="src/assets/images/twitter.svg" alt="">
+                    <a href="instagram.com/cybergenie_">
+                        <img src="src/assets/images/instagram.svg" alt="">
                         <p>Instagram</p>
                     </a>
                 </div>

@@ -10,7 +10,7 @@
                     <router-link to=""><img src="/src/assets/images/info.svg" alt=""></router-link>
                 </div> 
             </div>
-                      
+                    
         </main>
     </div>
 </template>
