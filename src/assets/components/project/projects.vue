@@ -61,26 +61,26 @@ export default {
                 },
 
                 {
-                    image: '',
-                    title: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
+                    image: '/src/assets/images/order-summary.png',
+                    title: 'Order Summary Card',
+                    description: 'A UI card component that can be used in the pre-payment sections of e-commerce sites',
+                    liveLink: 'https://cybergeni.github.io/order-summary-component',
+                    projectInfo: 'https://github.com/cybergeni/order-summary-component/',
                     tag: '',
                     id: 5
                 },
 
                 {
-                    image: '',
-                    title: '',
-                    description: '',
+                    image: '/src/assets/images/huddle.png',
+                    title: 'Huddle',
+                    description: 'Huddle re-imagines the way we build communities, helping you to create connections with users.(featuristic)',
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
                     id: 6
                 },
 
-                {
+            /*    {
                     image: '',
                     title: '',
                     description: '',
@@ -98,7 +98,7 @@ export default {
                     projectInfo: '',
                     tag: '',
                     id: 8
-                },
+                }, */
             ]
         }
     }

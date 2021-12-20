@@ -11,22 +11,22 @@
                     <h2 class="see-more">Learn more about me <router-link to="/about" exact><img src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
                 </div>
             </div>
-            <div class="projects">
+        <!--    <div class="projects">
                 <h1>Some of my featured projects</h1>
                 <featured></featured>
                 <h2 class="see-more">View more projects <router-link to="/projects" exact><img src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
             </div>
-            <div class="contact"></div>
+            <div class="contact"></div> -->
         </main>
     </div>
 </template>
 <script>
-import Featured from './project/featured-project.vue'
+/* import Featured from './project/featured-project.vue'
 export default {
     components: {
-        'featured': Featured
+         'featured': Featured
     }
-}
+} */
 </script>
 <style scoped>
 /* hero section */
