@@ -6,11 +6,11 @@
                 <h2 :key="project.id">{{project.title}}</h2>
                 <p>{{project.description}}</p>
                 <div class="links">
-                    <button><a :href="liveLink" target="_blank">Check it out</a></button>
-                    <router-link to=""><img src="/src/assets/images/info.svg" alt=""></router-link>
+                    <button><a :href="project.liveLink" target="_blank">Check it out</a></button>
+                    <router-link :to="'project.projectInfo'" v-if="project.extraInfo"><img src="/src/assets/images/info.svg" alt="More Info"></router-link>
+                    <a v-if="!project.extraInfo" :href="project.projectInfo" target="_blank"><img src="/src/assets/images/info.svg" alt="More Info"></a>
                 </div> 
-            </div>
-                      
+            </div>            
         </main>
     </div>
 </template>
@@ -20,34 +20,34 @@ export default {
         return {
             projects: [
                 {
-                    image: '',
-                    title: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
-                    tag: '',
-                    id: 2
-                },
-
-                {
-                    image: '',
-                    title: '',
-                    imageDescription: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
-                    tag: 'featured',
+                    image: '/src/assets/images/chat-app.png',
+                    title: 'Chat Application Illustration',
+                    description: "A landing page for the chat section of a dog-walking application. P.S: the phone isn't a picture. :)",
+                    liveLink: 'https://cybergeni.github.io/chat-app-illustration',
+                    projectInfo: 'https://github.com/cybergeni/chat-app-illustration',
+                    tag: 'landingPage',
                     id: 1
                 },
 
                 {
+                    image: '/src/assets/images/clipboard.png',
+                    title: 'Clipboard Application (featuristic)',
+                    imageDescription: '',
+                    description: 'An application that helps you gather and share your clips with teammates.',
+                    liveLink: 'https://cybergeni.github.io/clipboard-landing-page',
+                    projectInfo: 'https://github.com/cybergeni/clipboard-landing-page',
+                    tag: '',
+                    id: 2
+                },
+
+                {
                     image: '',
                     title: '',
                     description: '',
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
-                    id: 2
+                    id: 3
                 },  
 
                 {
@@ -57,7 +57,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
-                    id: 2
+                    id: 4
                 },
 
                 {
@@ -67,7 +67,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
-                    id: 2
+                    id: 5
                 },
 
                 {
@@ -77,7 +77,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
-                    id: ''
+                    id: 6
                 },
 
                 {
@@ -87,7 +87,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
-                    id: ''
+                    id: 7
                 },
 
                 {
@@ -97,7 +97,7 @@ export default {
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
-                    id: ''
+                    id: 8
                 },
             ]
         }
@@ -145,9 +145,12 @@ export default {
         align-items: center;
         margin: 1em 0 0.5em 0;
     }
+    .links a {
+        color: #a9adc1;
+    }
     .links button {
         align-self: flex-end;
-        border: 1px solid #fff;
+        border: 1px solid #a9adc1;
         border-radius: 4px;
         color: white;
         padding: 8px 16px;
@@ -155,9 +158,8 @@ export default {
         font-size: 18px;
     }
     .links button:hover {
-        background-color: #a9adc1;
-        color: #1f2028;
-        border: 1px solid transparent;
+        color: white;
+        border: 2px solid white;
     }
     /* media queries */
     @media  (min-width: 1024px) {

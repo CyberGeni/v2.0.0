@@ -7,10 +7,10 @@
                 <p>{{project.description}}</p>
                 <div class="links">
                     <button><a :href="project.liveLink" target="_blank">Check it out</a></button>
-                    <router-link to=""><img src="/src/assets/images/info.svg" alt=""></router-link>
+                    <router-link :to="'project.projectInfo'" v-if="project.extraInfo"><img src="/src/assets/images/info.svg" alt="More Info"></router-link>
+                    <a v-if="!project.extraInfo" :href="project.githubRepo" target="_blank"><img src="/src/assets/images/info.svg" alt="More Info"></a>
                 </div> 
             </div>
-                    
         </main>
     </div>
 </template>
@@ -25,15 +25,17 @@ export default {
                     description: 'An overthinking tracking application that helps you control overthinking. (prototype)',
                     liveLink: 'https://riskfreeapp.netlify.app',
                     projectInfo: '',
+                    extraInfo: false,
+                    githubRepo: 'https://github.com/cybergeni/riskfree',
                     tag: 'featured',
                     id: 1
                 },
 
-                {
-                    image: '/src/assets/images/portfolio.png',
-                    title: 'Portfolio',
-                    imageDescription: 'My portfolio site preview',
-                    description: 'A version of my portfolio website created with Vue.js. This is/was the first version that ever got publicized.',
+            /*    {
+                    image: '',
+                    title: '',
+                    imageDescription: '',
+                    description: '',
                     liveLink: '',
                     projectInfo: '',
                     tag: 'featured',
@@ -41,15 +43,15 @@ export default {
                 },
 
                 {
-                    image: '/src/assets/images/portfolio.png',
+                    image: '',
                     title: 'LaBurtina',
-                    description: 'A responsive, lite version spice e-commerce website for a personal company.',
-                    liveLink: '',
-                    projectInfo: '',
+                    description: 'A responsive, lite version spice e-commerce website for a personal company.(under construction)',
+                    liveLink: 'https://laburtina.netlify.app',
+                    projectInfo: 'https://github.com/cybergenie/laburtina',
                     tag: 'featured',
                     id: 3
                 }
-
+            */
                 
             ]
         }
