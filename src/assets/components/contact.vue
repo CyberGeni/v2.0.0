@@ -39,19 +39,19 @@
             </section>
             <section>
                 <div>
-                    <a href="https://github.com/cybergeni">
+                    <a href="https://github.com/cybergeni" target="_blank">
                         <img src="src/assets/images/github.svg" alt="">
                         <p>GitHub</p>
                     </a>
                 </div>
                <div>
-                    <a href="https://linkedin.com/in/treasure-ajefu">
+                    <a href="https://linkedin.com/in/treasure-ajefu" target="_blank">
                         <img src="src/assets/images/linkedin.svg" alt="">
                         <p>LinkedIn</p>
                     </a>
                 </div>
                 <div>
-                    <a href="instagram.com/cybergenie_">
+                    <a href="https://www.instagram.com/cybergenie_" target="_blank">
                         <img src="src/assets/images/instagram.svg" alt="">
                         <p>Instagram</p>
                     </a>

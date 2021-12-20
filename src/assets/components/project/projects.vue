@@ -51,11 +51,11 @@ export default {
                 },  
 
                 {
-                    image: '',
-                    title: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
+                    image: '/src/assets/images/fylo.png',
+                    title: 'Fylo',
+                    description: 'Fylo is a storage software that helps you access and share your files across your devices. (featuristic)',
+                    liveLink: 'https://cybergeni.github.io/fylo-landing-page-dark-theme',
+                    projectInfo: 'https://github.com/cybergeni/fylo-landing-page-dark-theme/',
                     tag: '',
                     id: 4
                 },
