@@ -31,9 +31,9 @@ export default {
 
                 {
                     image: '/src/assets/images/clipboard.png',
-                    title: 'Clipboard Application (featuristic)',
+                    title: 'Clipboard Application',
                     imageDescription: '',
-                    description: 'An application that helps you gather and share your clips with teammates.',
+                    description: 'An application that helps you gather and share your clips with teammates.(featuristic)',
                     liveLink: 'https://cybergeni.github.io/clipboard-landing-page',
                     projectInfo: 'https://github.com/cybergeni/clipboard-landing-page',
                     tag: '',
@@ -41,12 +41,12 @@ export default {
                 },
 
                 {
-                    image: '',
-                    title: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
-                    tag: '',
+                    image: '/src/assets/images/social-proof-section.png',
+                    title: 'Social Proof UI Component',
+                    description: 'A responsive social proof section UI component containing customer reviews and ratings.',
+                    liveLink: 'https://cybergeni.github.io/social-proof-section',
+                    projectInfo: 'https://github.com/cybergeni/social-proof-section',
+                    tag: 'component',
                     id: 3
                 },  
 
