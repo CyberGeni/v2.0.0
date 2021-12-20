@@ -44,17 +44,17 @@ export default {
         max-width: 420px;
     }
 
-/* projects */
+/* projects 
     .projects {
         margin-bottom: 10em 0;
     }
     .projects h1 {
         font-size: 1.8em;
-    }  
+    }  */
     h2.see-more {
         display: flex;
         align-items: start;
-    }
+    } 
     p {
         color: #a9adc1;
         font-size: 1.8em;
@@ -71,7 +71,7 @@ export default {
     }
     .see-more img:hover {
         border: 1px solid #fff;
-    }
+    } 
     /* animations */
     @keyframes slightLinearMovement {
         0% {
@@ -87,19 +87,23 @@ export default {
     /* media queries */
 
     @media (min-width: 720px) {
+        body {
+            height: fit-content;
+        }
         .hero {
             flex-grow: 1 1;
             min-height: 85vh;
+            
             align-content: center;
             justify-content: space-evenly;
         }
         .hero-text {
             max-width: 550px;
         }
-        .projects {
+    /*    .projects {
             align-content: center;
             min-height: 80vh;
             margin-bottom: 2em;
-        }
+        }*/
     }
 </style>
