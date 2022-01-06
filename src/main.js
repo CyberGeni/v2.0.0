@@ -13,7 +13,7 @@ import About from './assets/components/about.vue'
 import Projects from './assets/components/project/projects.vue'
 import MiniBlog from './assets/components/blog.vue'
 import Contact from './assets/components/contact.vue'
-
+import Thanks from './assets/components/thanks.vue'
 // Project info components
 
 import devicespex from './assets/components/project/project-info/devicespex.vue'
@@ -37,7 +37,9 @@ const router = new VueRouter({
     {path: '/projects', component: Projects},
     {path: '/contact', component: Contact},
 
-    // error handlers
+    // thank you page
+    {path: '/thank-you', component: Thanks},
+
     // mediocre routing of project information components
     {path: '/projects/project-info/devicespex', component: devicespex},
     {path: '/contact', component: Contact},

@@ -2,12 +2,20 @@
     <div>
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
-            <form action="" data-netlify="true" name="Contact" method="POST">
+            <form action="https://formsubmit.co/treasureajefu@gmail.com" name="Contact" method="POST">
                 <div class="short-input">
-                    <input type="text" name="name" placeholder="Your name here ..."  required>
-                    <input type="email" name="email" placeholder="Your email here..."  required>
+                    <input type="text" name="Name" placeholder="Your name here ..."  required>
+                    <input type="email" name="Email" placeholder="Your email here..."  required>
                 </div>
-                <textarea name="message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
+                <textarea name="Message" cols="30" rows="8" placeholder="Your message here..." required></textarea>
+                <!-- form submission hidden input fields -->      
+                
+                <!-- redirect to a thank you page -->
+                <input type="hidden" name="_next" value="/thank-you">
+                <!-- tweaked the design format a little -->
+                <input type="hidden" name="_template" value="box">
+                <!-- disabling recaptcha -->
+                <input type="hidden" name="_captcha" value="false">
                 <button type="submit">Send Message</button>
             </form>
         </div>
