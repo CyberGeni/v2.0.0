@@ -2,7 +2,8 @@
 
 > Version 2 of my proposed portfolio site. Hopefully, i don't flop it
 
-## Build Setup
+## Build Setup 
+> (Vue.js)
 
 ``` bash
 # install dependencies
