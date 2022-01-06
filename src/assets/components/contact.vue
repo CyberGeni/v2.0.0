@@ -2,7 +2,7 @@
     <div>
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
-            <form action="https://formsubmit.co/treasureajefu@gmail.com" name="Contact" method="POST">
+            <form action="https://formsubmit.co/2a7061c6ce055c5c48ea10045e956c7e" name="Contact" method="POST">
                 <div class="short-input">
                     <input type="text" name="Name" placeholder="Your name here ..."  required>
                     <input type="email" name="Email" placeholder="Your email here..."  required>
@@ -11,7 +11,7 @@
                 <!-- form submission hidden input fields -->      
                 
                 <!-- redirect to a thank you page -->
-                <input type="hidden" name="_next" value="/thank-you">
+                <input type="hidden" name="_next" value="https://cybergenie.netlify.app/thank-you">
                 <!-- tweaked the design format a little -->
                 <input type="hidden" name="_template" value="box">
                 <!-- disabling recaptcha -->
