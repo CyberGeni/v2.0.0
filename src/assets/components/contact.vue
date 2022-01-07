@@ -16,6 +16,7 @@
                 <input type="hidden" name="_template" value="box">
                 <!-- disabling recaptcha -->
                 <input type="hidden" name="_captcha" value="false">
+                
                 <button type="submit">Send Message</button>
             </form>
         </div>

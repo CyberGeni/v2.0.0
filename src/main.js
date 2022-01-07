@@ -22,9 +22,6 @@ import devicespex from './assets/components/project/project-info/devicespex.vue'
 // import MiniBlog from './assets/components/blog.vue'
 // import Contact from './assets/components/contact.vue'
 
-// Scroll reveal
-
-
 // Router init
 
 Vue.use(VueRouter);
