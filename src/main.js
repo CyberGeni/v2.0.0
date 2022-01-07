@@ -34,9 +34,7 @@ const router = new VueRouter({
 
     // mediocre routing of project information components
     {path: '/projects/project-info/devicespex', component: devicespex},
-    {path: '/contact', component: Contact},
-    {path: '/contact', component: Contact},
-    {path: '/contact', component: Contact},
+    
   ],
   mode : 'history'
 })
@@ -47,7 +45,6 @@ new Vue({
   el: '#app',
   render: h => h(App),
   router: router,
-  store
 })
 
 // I noticed that an error is raised if Vue is initiated before the other plugins. 
