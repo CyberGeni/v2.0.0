@@ -11,7 +11,7 @@
                 <!-- form submission hidden input fields -->      
                 
                 <!-- redirect to a thank you page -->
-                <input type="hidden" name="_next" value="https://cybergenie.netlify.app/thank-you">
+                <input type="hidden" name="_next" value="https://cybergenie.netlify.app/thanks.html">
                 <!-- tweaked the design format a little -->
                 <input type="hidden" name="_template" value="box">
                 <!-- disabling recaptcha -->
