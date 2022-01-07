@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Treasure says thank you!</title>
+    <!-- normally I hate to use internal stylesheets, but here I have no other option-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Jost', 'Segoe UI';
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #1f2028;
+            color: #fff;
+        }
+        main {
+            background-color: #2e3039;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding: 1em;
+            border-radius: 12px;
+        }
+        h1 {
+            margin: 0.7em 0;
+        }
+        p {
+            font-size: x-large;
+            
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            font-size: 18px;
+            color: white;
+            padding: 0.3em 0.5em;
+            margin: 1em auto;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-   <h1>thanksss</h1>
+    <main>
+        <h1>Thanks for sending me a message!</h1>
+        <p>You can't see me, but I'm doing my victory dance. I want to let you know that your message has been delivered, and I can't wait to hear you out. You can expect to recieve a response from me even before you count 5 mississippis. :)</p>
+        <a href="https://cybergenie.netlify.app/projects"><button><img src="/src/assets/images/arrow-left.svg" alt="">Go back to projects</button></a>
+    </main>
+   
 </body>
 </html>
