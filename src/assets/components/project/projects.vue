@@ -20,6 +20,15 @@ export default {
         return {
             projects: [
                 {
+                    image: '/src/assets/images/riskfree.png',
+                    title: 'Riskfree App',
+                    description: "An application that helps you control overthinking, to get a grip of your thoughts (featuristic)",
+                    liveLink: 'https://riskfreeapp.netlify.app/',
+                    projectInfo: 'https://github.com/cybergeni/riskfree',
+                    tag: 'landingPage',
+                    id: 1
+                },
+                {
                     image: '/src/assets/images/chat-app.png',
                     title: 'Chat Application Illustration',
                     description: "A landing page for the chat section of a dog-walking application. P.S: the phone isn't a picture. :)",

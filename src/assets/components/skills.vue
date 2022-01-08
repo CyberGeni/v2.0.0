@@ -3,32 +3,27 @@
                 <div class="skill html">
                     <p>HTML</p>
                     <img src="src/assets/images/html.png" alt="HTML">
-                    <progress min="0" max="100" value="95" />
                 </div>
                 <div class="skill css">
                     <p>CSS</p>
                     <img src="src/assets/images/css-3.png" alt="CSS">
-                    <progress min="0" max="100" value="75" />
                 </div>
                 <div class="skill js">
                     <p>JavaScript</p>
+            
                     <img src="src/assets/images/js.png" alt="JavaScript">
-                    <progress min="0" max="100" value="5" />
                 </div>
                 <div class="skill vue">
                     <p>Vue.js</p>
                     <img src="src/assets/images/vue.png" alt="Vue.js">
-                    <progress min="0" max="100" value="35" />
                 </div>
                 <div class="skill python">
                     <p>Python</p>
                     <img src="src/assets/images/python.png" alt="Python">
-                    <progress min="0" max="100" value="50" />
                 </div>
                 <div class="skill github">
                     <p>Git | GitHub</p>
                     <img src="src/assets/images/github.png" alt="Github">
-                    <progress min="0" max="100" value="75" />
                 </div>
     </div>
 </template>
