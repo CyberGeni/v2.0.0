@@ -2,8 +2,8 @@
     <div>
         <main>
             <h1>I'm a 16 year old Software Developer based in Lagos, Nigeria.</h1>
-            <p>My software development centers mostly around Frontend Development, using HTML, CSS, TailwindCSS and Vue.js. Fun fact: I don't know JavaScript (right?, I'm surprised too)</p>
-            <p>Other than Frontend dev, I also code in Python, trying to solve some algorithmic questions.</p>
+            <p>My software development centers mostly around Frontend Development, using HTML, CSS, TailwindCSS and Vue.js. Fun fact: I don't know JavaScript really well (right?, I'm surprised too)</p>
+            <p>Other than Frontend development, I also code in Python, trying to solve some algorithmic questions.</p>
 
             <h1>Skills</h1>
             <skills></skills>
