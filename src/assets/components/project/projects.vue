@@ -22,7 +22,7 @@ export default {
                 {
                     image: '/src/assets/images/riskfree.png',
                     title: 'Riskfree App',
-                    description: "An application that helps you control overthinking, to get a grip of your thoughts (featuristic)",
+                    description: "An application that helps you control overthinking, to get a grip of your thoughts (futuristic)",
                     liveLink: 'https://riskfreeapp.netlify.app/',
                     projectInfo: 'https://github.com/cybergeni/riskfree',
                     tag: 'landingPage',
@@ -42,7 +42,7 @@ export default {
                     image: '/src/assets/images/clipboard.png',
                     title: 'Clipboard Application',
                     imageDescription: '',
-                    description: 'An application that helps you gather and share your clips with teammates.(featuristic)',
+                    description: 'An application that helps you gather and share your clips with teammates.(futuristic)',
                     liveLink: 'https://cybergeni.github.io/clipboard-landing-page',
                     projectInfo: 'https://github.com/cybergeni/clipboard-landing-page',
                     tag: '',
@@ -62,7 +62,7 @@ export default {
                 {
                     image: '/src/assets/images/fylo.png',
                     title: 'Fylo',
-                    description: 'Fylo is a storage software that helps you access and share your files across your devices. (featuristic)',
+                    description: 'Fylo is a storage software that helps you access and share your files across your devices. (futuristic)',
                     liveLink: 'https://cybergeni.github.io/fylo-landing-page-dark-theme',
                     projectInfo: 'https://github.com/cybergeni/fylo-landing-page-dark-theme/',
                     tag: '',
@@ -82,7 +82,7 @@ export default {
                 {
                     image: '/src/assets/images/huddle.png',
                     title: 'Huddle',
-                    description: 'Huddle re-imagines the way we build communities, helping you to create connections with users.(featuristic)',
+                    description: 'Huddle re-imagines the way we build communities, helping you to create connections with users. (futuristic)',
                     liveLink: '',
                     projectInfo: '',
                     tag: '',
