@@ -3,7 +3,7 @@
         <main v-for="project in projects" :key="project.id">
             <img :src="project.image" :alt="imageDescription" class="sitePreview">
             <div class="info">
-                <h2 :key="project.id">{{project.title}}</h2>
+                <h2 :key="project.id" class="text-xl sm:text-2xl w-full font-bold leading-tight">{{project.title}}</h2>
                 <p>{{project.description}}</p>
                 <div class="links">
                     <button><a :href="project.liveLink" target="_blank">Check it out</a></button>
@@ -19,6 +19,15 @@ export default {
     data() {
         return {
             projects: [
+                {
+                    image: '/src/assets/images/fayvour.png',
+                    title: 'Product Designer\'s Portfolio',
+                    description: 'A portfolio website for a Product designer with great interface and sleek animations.',
+                    liveLink: 'https://fayvour.netlify.app/',
+                    projectInfo: 'https://github.com/cybergeni/FayvourAj',
+                    tag: 'portfolio',
+                    id: 7
+                },
                 {
                     image: '/src/assets/images/riskfree.png',
                     title: 'Riskfree App',
@@ -89,15 +98,7 @@ export default {
                     id: 6
                 },
 
-            /*    {
-                    image: '',
-                    title: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
-                    tag: '',
-                    id: 7
-                },
+            /*  
 
                 {
                     image: '',

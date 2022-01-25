@@ -6,9 +6,9 @@
                     <img src="src\assets\images\emoji-peace.png" alt="">
                 </div>
                 <div class="hero-text">
-                    <h1>Hi, I'm Treasure. I bring aesthetically pleasing designs to life, and create modern web solutions through code.</h1>
-                    <p>Basically, I develop eye-catching websites that will definitely leave you wondering whether 'impossible' exists.</p>
-                    <h2 class="see-more">Learn more about me <router-link to="/about" exact><img src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
+                    <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">Hi, I'm Treasure. I bring aesthetically pleasing designs to life, and create modern web solutions through code.</h1>
+                    <p class="text-2xl sm:text-3xl leading-tight">Basically, I develop eye-catching websites that will definitely leave you wondering whether 'impossible' exists.</p>
+                    <h2 class="see-more text-2xl sm:text-3xl ">Learn more about me <router-link to="/about" exact><img src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
                 </div>
             </div>
         <!--    <div class="projects">

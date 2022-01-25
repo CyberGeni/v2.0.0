@@ -1,14 +1,14 @@
 <template lang="">
     <div>
         <main>
-            <h1>I'm a 16 year old Software Developer based in Lagos, Nigeria.</h1>
-            <p>My software development centers mostly around Frontend Development, using HTML, CSS, TailwindCSS and Vue.js.</p>
-            <p>Other than Frontend development, I also code in Python, trying to solve some algorithmic questions.</p>
+            <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">I'm a 16 year old Software Developer based in Lagos, Nigeria.</h1>
+            <p>My software development centers mostly around Frontend Development, using HTML, CSS for the markup and design, TailwindCSS for wonderful UI, Vue.js for functionality and interaction. </p>
+            <p>Other than Frontend dev, I also code in Python, trying to solve some algorithmic questions.</p>
 
-            <h1>Skills</h1>
+            <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">Skills</h1>
             <skills></skills>
             <section>
-                <h1>Now, you might be wondering... why do you need me on your team?</h1>
+                <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">Now, you might be wondering... why do you need me on your team?</h1>
                     <ul>
                         <li>Not to brag or anything :-), but I'm the person you would want to call if you wanted pixel-perfect translations of design to code. That's like... my specialty. So if that's why you're here, then hearty congratulations. You need not look further, you've got the right person for the job.</li>
                         <li>I make a great team player. Are you searching for someone with excellent communication skills, collaboration skills, problem solving and accountability? I've got those.</li>
