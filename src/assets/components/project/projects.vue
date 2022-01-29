@@ -20,6 +20,15 @@ export default {
         return {
             projects: [
                 {
+                    image: '/src/assets/images/loopstudios.png',
+                    title: 'Loopstudios - VR',
+                    description: 'Producing world-class VR projects for some of the best companies around the globe. (futuristic)',
+                    liveLink: 'https://cybergeni.github.io/loopstudios/',
+                    projectInfo: 'https://github.com/cybergeni/loopstudios/',
+                    tag: 'landing-page',
+                    id: 8
+                },
+                {
                     image: '/src/assets/images/fayvour.png',
                     title: 'Product Designer\'s Portfolio',
                     description: 'A portfolio website for a Product designer with great interface and sleek animations.',
@@ -31,7 +40,7 @@ export default {
                 {
                     image: '/src/assets/images/riskfree.png',
                     title: 'Riskfree App',
-                    description: "An application that helps you control overthinking, to get a grip of your thoughts (futuristic)",
+                    description: "An application that helps you control overthinking, to get a grip of your thoughts. (futuristic)",
                     liveLink: 'https://riskfreeapp.netlify.app/',
                     projectInfo: 'https://github.com/cybergeni/riskfree',
                     tag: 'landingPage',
@@ -51,7 +60,7 @@ export default {
                     image: '/src/assets/images/clipboard.png',
                     title: 'Clipboard Application',
                     imageDescription: '',
-                    description: 'An application that helps you gather and share your clips with teammates.(futuristic)',
+                    description: 'An application that helps you gather and share your clips with teammates(futuristic).',
                     liveLink: 'https://cybergeni.github.io/clipboard-landing-page',
                     projectInfo: 'https://github.com/cybergeni/clipboard-landing-page',
                     tag: '',
@@ -96,19 +105,8 @@ export default {
                     projectInfo: '',
                     tag: '',
                     id: 6
-                },
-
-            /*  
-
-                {
-                    image: '',
-                    title: '',
-                    description: '',
-                    liveLink: '',
-                    projectInfo: '',
-                    tag: '',
-                    id: 8
-                }, */
+                }, 
+                
             ]
         }
     }
