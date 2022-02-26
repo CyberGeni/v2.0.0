@@ -20,7 +20,7 @@
                     <router-link to="/" ><li @click="toggled = !toggled">Home</li></router-link>
                     <router-link to="/about"><li @click="toggled = !toggled">About</li></router-link>
                     <router-link to="/projects"><li @click="toggled = !toggled">Projects</li></router-link>
-                    <router-link to="/blog"><li @click="toggled = !toggled">Mini Blog</li></router-link>
+                    <router-link to="https://cybergenie.hashnode.dev"><li @click="toggled = !toggled">Blog</li></router-link>
                     <router-link to="/contact"><li @click="toggled = !toggled">Contact</li></router-link>
                 </ul>
             </nav>
