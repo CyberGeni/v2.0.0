@@ -13,7 +13,7 @@ Basically, it's more like a portfolio redesign, where I change the structure of 
    <li>Technologies change, and my portfolio has to prove I'm picking these new technologies along the way</li>
 </ol>
 
-We're barely a month into 2022, my portfolio isn't 3months old yet, and ideas have already started to invade my head 😅
+We're barely 3 months into 2022, my portfolio isn't 3months old yet, and ideas have already started to invade my head 😅
 
 Now you're also thinking... Your portfolio could use a redesign next year right?
 I'd love you to join me, so we can brainstorm these ideas together.
