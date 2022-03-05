@@ -1,16 +1,18 @@
 <template>
     <div id="header" :class="{activenav : toggled}">
+        <!-- header for mobile -->
         <div class="headerForMobile" >
-            <header>
-                <div class="logo">Treasure A.</div>
-                <div class="menu">
-                    <button @click="changeTheme()"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
-
+            <header class="flex justify-between items-center w-full h-24">
+                <div class="logo text-3xl font-medium">Treasure<span class="font-black text-5xl text-slate-500">.</span></div>
+                <!-- menu -->
+                <div class="flex space-x-3">
+                    <button @click="changeTheme()" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme" ><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
+                <!-- burger -->
                     <div class="burger">
-                        <button @click="toggled = !toggled" id="navbarToggler" :class="{activenav : toggled}">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
+                        <button @click="toggled = !toggled" id="navbarToggler" class="flex flex-col w-12 h-12 space-y-1 items-center justify-center rounded-full border border-white" :class="{activenav : toggled}">
+                            <div class="line transition-full bg-white w-5 h-0.5 rounded"></div>
+                            <div class="line transition-full bg-white w-8 h-0.5 rounded"></div>
+                            <div class="line transition-full bg-white w-5 h-0.5 rounded"></div>
                         </button>                                     
                     </div>
                 </div>            
@@ -25,15 +27,16 @@
                 </ul>
             </nav>
         </div>
-        <div class="headerForDesktop"> 
+        <div class="headerForDesktop hidden"> 
             <header>
-                <div class="logo">Treasure A.</div>
+                <div class="logo">Treasure<span class="text-8xl text-slate-500">.</span></div>
                 <nav id="nav">
                     <ul>
                         <router-link to="/" exact><li>Home</li></router-link>
                         <router-link to="/about" exact><li>About</li></router-link>
                         <router-link to="/projects" exact><li>Projects</li></router-link>
-                        <li><router-link to="/blog" exact>Mini Blog</router-link></li>
+                        <a href="https://cybergenie.hashnode.dev"><li @click="toggled = !toggled">Blog</li></a>
+                        <!--<li><router-link to="/blog" exact>Mini Blog</router-link></li>-->
                         <li><router-link to="/contact" exact>Contact</router-link></li>
                     </ul>
                 </nav>
@@ -47,78 +50,28 @@
     </div>
 </template>
 <script>
-
-// navbar show on click link 
-
-
-// close navbar when user clicks a link 
-
-export default {
-    data() {
-        return {
-            toggled: false,
-            darkTheme: false,
-            imageLight: 'src/assets/images/sun.svg',
-            imageDark: 'src/assets/images/moon.svg',
+    export default {
+        data() {
+            return {
+                toggled: false,
+                darkTheme: false,
+                imageLight: 'src/assets/images/sun.svg',
+                imageDark: 'src/assets/images/moon.svg'
+            }
+        },
+        methods: {
+            changeTheme() {
+                this.darkTheme = !this.darkTheme;
+                if (this.darkTheme) {
+                    document.body.classList.add('dark');
+                } else {
+                    document.body.classList.remove('dark');
+                }
+            }
         }
     }
-}
 </script>
 <style>
-    .headerForDesktop {
-        display: none;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 120px;
-        width: 100%;
-    }
-    .logo {
-        font-size: 36px;
-        font-weight: 500;
-    }
-    .menu {
-        display: flex;
-    }
-    .menu > * + * {
-        margin-left: 0.7em;
-    }
-
-    /* burger designs */
-
-    header button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 52px;
-        height: 52px;
-    }
-    .darkTheme button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 52px;
-        height: 52px;
-    }
-    .line {
-        width: 26px;
-        height: 2px;
-        background-color: white;
-        margin: 2px;
-        border-radius: 8px;
-        transition: 0.5s ease-in-out;
-    }
-    .line:nth-child(odd) {
-        width: 15px;
-    }
 
     /* burger changing to x while active */
 
@@ -203,7 +156,6 @@ export default {
 
     /* header for desktop */
     
-    
     header {
         display: flex;
         justify-content: space-between;
@@ -267,9 +219,5 @@ export default {
             display: flex;
         }
     }
-
-    /* theme settings */
-
-
 </style>
     

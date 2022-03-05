@@ -1,69 +1,22 @@
 <template>
     <div>
-        <main>
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="src\assets\images\emoji-peace.png" alt="">
+        <main class="md:h-fit">
+            <div class="flex flex-wrap justify-around sm:justify-evenly sm:content-center sm:min-h-[75vh]">
+                <div >
+                    <img class="w-full max-w-[280px] my-2" src="src\assets\images\emoji-peace.png" alt="">
                 </div>
-                <div class="hero-text">
+                <div class="max-w-[420px] md:max-w-[550px]">
                     <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">Hi, I'm Treasure. I bring aesthetically pleasing designs to life, and create modern web solutions through code.</h1>
-                    <p class="text-2xl sm:text-3xl leading-tight">Basically, I develop eye-catching websites that will definitely leave you wondering whether 'impossible' exists.</p>
-                    <h2 class="see-more text-2xl sm:text-3xl ">Learn more about me <router-link to="/about" exact><img src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
+                    <p class="text-[#a9adc1] my-2 text-2xl sm:text-3xl font-medium leading-tight">Basically, I develop eye-catching websites that will definitely leave you wondering whether 'impossible' exists.</p>
+                    <h2 class="flex items-start text-2xl sm:text-3xl ">Learn more about me <router-link to="/about" exact><img class="mx-1 p-0.5 " src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
                 </div>
             </div>
-        <!--    <div class="projects">
-                <h1>Some of my featured projects</h1>
-                <featured></featured>
-                <h2 class="see-more">View more projects <router-link to="/projects" exact><img src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
-            </div>
-            <div class="contact"></div> -->
         </main>
     </div>
 </template>
-<script>
-/* import Featured from './project/featured-project.vue'
-export default {
-    components: {
-         'featured': Featured
-    }
-} */
-</script>
 <style scoped>
-/* hero section */
-    .hero {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }  
-    .hero-image img {
-        width: 100%;
-        max-width: 280px;
-        margin: 2em 0;
-    }
-    .hero-text {
-        max-width: 420px;
-    }
 
-/* projects 
-    .projects {
-        margin-bottom: 10em 0;
-    }
-    .projects h1 {
-        font-size: 1.8em;
-    }  */
-    h2.see-more {
-        display: flex;
-        align-items: start;
-    } 
-    p {
-        color: #a9adc1;
-        font-size: 1.8em;
-        font-weight: 500;
-        margin: 1em 0;
-    }
     h2.see-more img {
-        margin: 0 0.6em;
-        padding: 8px 8px;
         border-radius: 50%;
         border: 1px solid #a9adc1;
         transition: 2s ease-in infinite;
@@ -87,23 +40,12 @@ export default {
     /* media queries */
 
     @media (min-width: 720px) {
-        body {
-            height: fit-content;
-        }
+
         .hero {
-            flex-grow: 1 1;
-            min-height: 85vh;
-            
-            align-content: center;
-            justify-content: space-evenly;
+            flex-grow: 1 1;     
+
         }
-        .hero-text {
-            max-width: 550px;
-        }
-    /*    .projects {
-            align-content: center;
-            min-height: 80vh;
-            margin-bottom: 2em;
-        }*/
+
+
     }
 </style>
