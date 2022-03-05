@@ -34,6 +34,7 @@ export default {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jost', 'Segoe UI';
+    scroll-behavior: smooth;
   }
   li {
     list-style: none;
