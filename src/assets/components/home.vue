@@ -7,7 +7,7 @@
                 </div>
                 <div class="max-w-[420px] md:max-w-[550px]">
                     <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">Hi, I'm Treasure. I bring aesthetically pleasing designs to life, and create modern web solutions through code.</h1>
-                    <p class="text-[#a9adc1] my-2 text-2xl sm:text-3xl font-medium leading-tight">Basically, I develop eye-catching websites that will definitely leave you wondering whether 'impossible' exists.</p>
+                    <p class="text-[#a9adc1] my-2 text-2xl sm:text-3xl font-medium leading-tight my-4 md:my-8">Basically, I develop eye-catching websites that will definitely leave you wondering whether 'impossible' exists.</p>
                     <h2 class="flex items-start text-2xl sm:text-3xl ">Learn more about me <router-link to="/about" exact><img class="mx-1 p-0.5 " src="src/assets/images/arrow-right.svg" alt="Arrow right button"></router-link></h2>
                 </div>
             </div>

@@ -17,32 +17,34 @@
                     </div>
                 </div>            
             </header>
-            <nav id="nav" v-if="toggled">
+            <!-- navbar -->
+            <nav class="flex absolute items-stretch z-100 w-full h-screen" id="nav" v-if="toggled">
                 <ul>
-                    <router-link to="/" ><li @click="toggled = !toggled">Home</li></router-link>
-                    <router-link to="/about"><li @click="toggled = !toggled">About</li></router-link>
-                    <router-link to="/projects"><li @click="toggled = !toggled">Projects</li></router-link>
-                    <a href="https://cybergenie.hashnode.dev"><li @click="toggled = !toggled">Blog</li></a>
-                    <router-link to="/contact"><li @click="toggled = !toggled">Contact</li></router-link>
+                    <router-link class="text-white" to="/" ><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">Home</li></router-link>
+                    <router-link class="text-white" to="/about"><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">About</li></router-link>
+                    <router-link class="text-white" to="/projects"><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">Projects</li></router-link>
+                    <a class="text-white" href="https://cybergenie.hashnode.dev"><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">Blog</li></a>
+                    <router-link class="text-white" to="/contact"><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">Contact</li></router-link>
                 </ul>
             </nav>
         </div>
         <div class="headerForDesktop hidden"> 
             <header>
                 <div class="logo">Treasure<span class="text-8xl text-slate-500">.</span></div>
+                <!-- navbar -->
                 <nav id="nav">
-                    <ul>
+                    <ul class="w-full">
                         <router-link to="/" exact><li>Home</li></router-link>
                         <router-link to="/about" exact><li>About</li></router-link>
                         <router-link to="/projects" exact><li>Projects</li></router-link>
-                        <a href="https://cybergenie.hashnode.dev"><li @click="toggled = !toggled">Blog</li></a>
+                        <a class="text-white transition-full" href="https://cybergenie.hashnode.dev"><li @click="toggled = !toggled">Blog</li></a>
                         <!--<li><router-link to="/blog" exact>Mini Blog</router-link></li>-->
                         <li><router-link to="/contact" exact>Contact</router-link></li>
                     </ul>
                 </nav>
                 <div class="menu">
                     <div class="themeToggle">
-                        <button @click="darkTheme = !darkTheme" ><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
+                        <button @click="darkTheme = !darkTheme" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
                     </div>
                 </div>        
             </header>       
@@ -91,32 +93,7 @@
 
     /* navigation listings */
 
-    .headerForMobile nav {
-        display: flex;
-        align-items: stretch;
-        z-index: 100;   
-        width: 100%;   
-        height: 100vh;
-        transition: 2s ease-in;
-        animation: fadeIn 1.2s;
-        position: absolute;
-    }
-    nav ul {
-        width: 100%; 
-    }
-    .headerForMobile nav li {
-        padding-left: 1em;
-        border-top: 1px solid #ccc;
-        line-height: 70px;
-    }
-    .headerForMobile a {
-        color: white;
-        transition: 0.3s;
-    }
-    .headerForMobile a:hover {
-        padding-left: 1rem;
-        
-    }
+ 
 
     /* overflow hidden while active */
     #header.activenav{
@@ -152,7 +129,6 @@
             min-height: 100%;
         }
     }
-
 
     /* header for desktop */
     
