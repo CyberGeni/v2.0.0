@@ -9,7 +9,7 @@
                     <button @click="changeTheme()" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme" ><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
                 <!-- burger -->
                     <div class="burger">
-                        <button @click="toggled = !toggled" id="navbarToggler" class="flex flex-col w-12 h-12 space-y-1 items-center justify-center rounded-full border border-white" :class="{activenav : toggled}">
+                        <button  @click="toggled = !toggled;toggle()" id="navbarToggler" class="flex flex-col w-12 h-12 space-y-1 items-center justify-center rounded-full border border-white" :class="{activenav : toggled}">
                             <div class="line transition-full bg-white w-5 h-0.5 rounded"></div>
                             <div class="line transition-full bg-white w-8 h-0.5 rounded"></div>
                             <div class="line transition-full bg-white w-5 h-0.5 rounded"></div>
@@ -18,8 +18,8 @@
                 </div>            
             </header>
             <!-- navbar -->
-            <nav class="flex absolute items-stretch z-100 w-full h-screen" id="nav" v-if="toggled">
-                <ul>
+            <nav :class="{animate__lightSpeedInRight : toggled}" class="animate__animated animate__fast flex absolute items-stretch z-100 w-full h-full bg-background" id="nav" v-if="toggled">
+                <ul class="bg-background mt-[-2em]">
                     <router-link class="text-white" to="/" ><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">Home</li></router-link>
                     <router-link class="text-white" to="/about"><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">About</li></router-link>
                     <router-link class="text-white" to="/projects"><li class="pl-4 hover:pl-6 transition-all border-b py-4" @click="toggled = !toggled">Projects</li></router-link>
@@ -29,8 +29,8 @@
             </nav>
         </div>
         <div class="headerForDesktop hidden"> 
-            <header>
-                <div class="logo">Treasure<span class="text-8xl text-slate-500">.</span></div>
+            <header class="flex justify-between items-center w-full h-24">
+                <div class="flex items-center text-4xl font-medium">Treasure<span class="mt-[-0.45em] text-8xl text-slate-500">.</span></div>
                 <!-- navbar -->
                 <nav id="nav">
                     <ul class="w-full">
@@ -42,7 +42,8 @@
                         <li><router-link to="/contact" exact>Contact</router-link></li>
                     </ul>
                 </nav>
-                <div class="menu">
+                <!-- menu -->
+                <div class="flex">
                     <div class="themeToggle">
                         <button @click="darkTheme = !darkTheme" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
                     </div>
@@ -69,7 +70,7 @@
                 } else {
                     document.body.classList.remove('dark');
                 }
-            }
+            },
         }
     }
 </script>
@@ -90,10 +91,6 @@
         transform: rotate(135deg);
         width: 22px;
     }
-
-    /* navigation listings */
-
- 
 
     /* overflow hidden while active */
     #header.activenav{
@@ -131,21 +128,7 @@
     }
 
     /* header for desktop */
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 120px;
-        width: 100%;
-    }
-    .logo {
-        font-size: 36px;
-        font-weight: 500;
-    }
-    .menu {
-        display: flex;
-    }
+
     .menu > * + * {
         margin-left: 0.7em;
     }

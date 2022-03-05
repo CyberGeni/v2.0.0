@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-        <main v-for="project in projects" :key="project.id">
+        <main class="" v-for="project in projects" :key="project.id">
             <img :src="project.image" :alt="imageDescription" class="sitePreview">
             <div class="info">
                 <h2 :key="project.id" class="text-xl sm:text-2xl w-full font-bold leading-tight">{{project.title}}</h2>

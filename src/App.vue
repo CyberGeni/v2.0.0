@@ -90,6 +90,4 @@ export default {
   ::-webkit-scrollbar-button {
     height: 0px;
   }
-  /* dark theme settings */
-
 </style>
