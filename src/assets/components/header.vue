@@ -29,7 +29,7 @@
             </nav>
         </div>
         <div class="headerForDesktop hidden"> 
-            <header class="flex justify-between items-center w-full h-24">
+            <header class="flex justify-between items-center w-full h-26 md:h-28">
                 <div class="flex items-center text-4xl font-medium">Treasure<span class="mt-[-0.45em] text-8xl text-slate-500">.</span></div>
                 <!-- navbar -->
                 <nav id="nav">
