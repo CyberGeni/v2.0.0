@@ -29,7 +29,7 @@
             </nav>
         </div>
         <div class="headerForDesktop hidden"> 
-            <header class="flex justify-between items-center w-full h-26 md:h-28">
+            <header class="flex justify-between items-center w-full h-26 sm:h-24">
                 <div class="flex items-center text-4xl font-medium">Treasure<span class="mt-[-0.45em] text-8xl text-slate-500">.</span></div>
                 <!-- navbar -->
                 <nav id="nav">
@@ -37,7 +37,7 @@
                         <router-link to="/" exact><li>Home</li></router-link>
                         <router-link to="/about" exact><li>About</li></router-link>
                         <router-link to="/projects" exact><li>Projects</li></router-link>
-                        <a class="text-white transition-full" href="https://cybergenie.hashnode.dev"><li @click="toggled = !toggled">Blog</li></a>
+                        <a class="text-white transition-full" href="https://cybergenie.hashnode.dev" target="_blank"><li @click="toggled = !toggled">Blog</li></a>
                         <!--<li><router-link to="/blog" exact>Mini Blog</router-link></li>-->
                         <li><router-link to="/contact" exact>Contact</router-link></li>
                     </ul>

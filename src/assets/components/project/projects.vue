@@ -6,7 +6,7 @@
                 <h2 :key="project.id" class="text-xl sm:text-2xl w-full font-bold leading-tight">{{project.title}}</h2>
                 <p>{{project.description}}</p>
                 <div class="links">
-                    <button><a :href="project.liveLink" target="_blank">Check it out</a></button>
+                    <button class="font-medium text-xl border-2 border-secondary rounded px-5 py-2 hover:ring-2 hover:ring-secondary hover:ring-offset-2 hover:ring-offset-background transition-all"><a :href="project.liveLink" target="_blank">Check it out</a></button>
                     <router-link :to="'project.projectInfo'" v-if="project.extraInfo"><img src="/src/assets/images/info.svg" alt="More Info"></router-link>
                     <a v-if="!project.extraInfo" :href="project.projectInfo" target="_blank"><img src="/src/assets/images/info.svg" alt="More Info"></a>
                 </div> 

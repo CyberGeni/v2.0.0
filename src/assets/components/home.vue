@@ -1,6 +1,6 @@
 <template>
     <div>
-        <main class="md:h-fit">
+        <main class="h-full md:h-full">
             <div class="flex flex-wrap justify-around grow sm:justify-evenly sm:content-center sm:min-h-[75vh]">
                 <div >
                     <img class="w-full max-w-[280px] my-2" src="src\assets\images\emoji-peace.png" alt="">
