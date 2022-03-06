@@ -1,5 +1,5 @@
 <template>
-  <div id="app" >  
+  <div id="app" class="flex flex-col items-stretch justify-between">  
     <main>
       <app-header></app-header>    
       <router-view></router-view>
@@ -46,20 +46,29 @@ export default {
     background-color: transparent;
   }
   body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
     background-color: #1f2028;
     color: #fff;
   }
   main {
     width: 95%;
     margin: auto;
+    flex-grow: 1;
   }
   footer {
+    position: relative;
     text-align: center;
     line-height: 36px;
     background-color: #2e3039;
     color: #a9adc1;
     width: 100%;
     margin-top: 1em;
+    margin-bottom: 0.1em;
   }
   .resume {
     border: none;
