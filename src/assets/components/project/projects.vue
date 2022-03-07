@@ -1,6 +1,6 @@
 <template>
     <div class="projects flex flex-wrap justify-center">
-        <main class="z-[-1] w-full max-w-[360px] m-4 bg-lighterBackground p-3 rounded-xl transition-all hover:bg-transparent animate__animated animate__jello shadow-xl" v-for="project in projects" :key="project.id">
+        <main class="w-full max-w-[360px] m-4 bg-lighterBackground p-3 rounded-xl transition-all hover:bg-transparent animate__animated animate__jello shadow-xl" v-for="project in projects" :key="project.id">
             <img :src="project.image" :alt="imageDescription" class="sitePreview w-full rounded">
             <div class="info px-2 py-1">
                 <h2 :key="project.id" class="text-xl sm:text-2xl w-full font-bold leading-tight my-2">{{project.title}}</h2>

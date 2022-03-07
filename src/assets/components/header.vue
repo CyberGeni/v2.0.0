@@ -1,7 +1,7 @@
 <template>
-    <div id="header" :class="{activenav : toggled}">
+    <div class="" id="header" :class="{activenav : toggled}">
         <!-- header for mobile -->
-        <div class="headerForMobile" >
+        <div class="headerForMobile z-1000 relative" >
             <header class="flex justify-between items-center w-full h-24">
                 <div class="logo text-3xl font-medium">Treasure<span class="font-black text-5xl text-slate-500">.</span></div>
                 <!-- menu -->
