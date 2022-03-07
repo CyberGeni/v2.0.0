@@ -12,7 +12,7 @@
                 </div> 
             </div>            
         </main>
-        <button class="flex text-center m-auto font-medium text-xl border-2 border-secondary rounded px-5 py-2 hover:ring-2 hover:ring-secondary hover:ring-offset-2 hover:ring-offset-background transition-all"><a href="https://github.com/cybergeni">There's More On GitHub 🌚</a></button>
+        <button class="flex text-center m-auto font-medium text-xl border-2 border-secondary rounded px-5 py-2 hover:ring-2 hover:ring-secondary hover:ring-offset-2 hover:ring-offset-background transition-all"><a href="https://github.com/cybergeni" target="_blank">There's More On GitHub 🌚</a></button>
     </div>
 </template>
 <script>
