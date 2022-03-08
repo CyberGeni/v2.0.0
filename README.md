@@ -23,7 +23,7 @@ Send me a mail: treasureajefu@gmail.com with 'The Annual Refresh' as the title.
 
 ## Build Setup 
 > (Vue.js)
-
+* for npm
 ``` bash
 # install dependencies
 npm install
