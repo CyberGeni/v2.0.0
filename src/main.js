@@ -18,10 +18,6 @@ import Contact from './assets/components/contact.vue'
 // Project info components
 
 import devicespex from './assets/components/project/project-info/devicespex.vue'
-// import About from './assets/components/about.vue'
-// import Projects from './assets/components/project/projects.vue'
-// import MiniBlog from './assets/components/blog.vue'
-// import Contact from './assets/components/contact.vue'
 
 // Router init
 
@@ -39,7 +35,11 @@ const router = new VueRouter({
     {path: '/projects/project-info/devicespex', component: devicespex},
     
   ],
-  mode : 'history'
+  mode : 'history',
+    scrollBehavior(to, from, savedPosition) {
+      // always scroll to top
+      return { top: 0 }
+    },
 })
 
 // Vue init
