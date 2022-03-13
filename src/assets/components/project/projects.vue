@@ -21,6 +21,15 @@ export default {
         return {
             projects: [
                 {
+                    image: '/src/assets/images/space.png',
+                    title: 'Space Tour (coming soon)',
+                    description: "C'mon... if you want to go to space, you might as well go to outer space and not hover kinda on it's edge.",
+                    liveLink: '#',
+                    projectInfo: 'https://github.com/space-tourism/',
+                    tag: 'landing-page',
+                    id: 9
+                },
+                {
                     image: '/src/assets/images/loopstudios.png',
                     title: 'Loopstudios - VR',
                     description: 'Producing world-class VR projects for some of the best companies around the globe. (futuristic)',
