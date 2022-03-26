@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <main>
-            <h1 class="text-2xl md:text-4xl w-full font-bold leading-tight">I'm a 16 year old Software Developer based in Lagos, Nigeria.</h1>
+            <h1 class="text-2xl md:text-4xl w-full font-bold leading-tight">I'm a 17 year old Software Developer based in Lagos, Nigeria.</h1>
             <p class="text-secondary text-2xl md:3xl my-6 font-medium">My software development centers mostly around Frontend Development, using HTML, CSS for the markup and design, TailwindCSS for wonderful UI, Vue.js for functionality and interaction. </p>
             <p class="text-secondary text-2xl md:3xl my-6 font-medium">Other than Frontend dev, I also code in Python, trying to solve some algorithmic questions.</p>
 
