@@ -25,7 +25,7 @@ export default {
                     title: 'Space Tour (coming soon)',
                     description: "C'mon... if you want to go to space, you might as well go to outer space and not hover kinda on it's edge.",
                     liveLink: '#',
-                    projectInfo: 'https://github.com/space-tourism/',
+                    projectInfo: 'https://github.com/cybergeni/space-tourism/',
                     tag: 'landing-page',
                     id: 9
                 },
