@@ -32,7 +32,7 @@ export default {
                 {
                     image: '/src/assets/images/hulu-clone.jpg',
                     title: 'Hulu Clone',
-                    description: 'Hulu is the best way to watch your favorite shows and movies on the go. (clone)',
+                    description: "Hulu is the best way to watch your favorite shows and movies on the go. (clone)",
                     liveLink: 'https://cybergeni.github.io/hulu-clone/',
                     projectInfo: 'https://github.com/cybergeni/hulu-clone/',
                     tag: 'landing-page',
