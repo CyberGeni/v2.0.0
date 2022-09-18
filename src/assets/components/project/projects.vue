@@ -21,13 +21,13 @@ export default {
         return {
             projects: [
                 {
-                    image: '/src/assets/images/space.png',
-                    title: 'Space Tour (coming soon)',
-                    description: "C'mon... if you want to go to space, you might as well go to outer space and not hover kinda on it's edge.",
-                    liveLink: '#',
-                    projectInfo: 'https://github.com/cybergeni/space-tourism/',
+                    image: '/src/assets/images/hulu-clone.jpg',
+                    title: 'Crappo Crypto',
+                    description: "Creed this project as part of an online Twitter design recreation challenge.",
+                    liveLink: 'https://cybergeni.github.io/crappo/',
+                    projectInfo: 'https://github.com/cybergeni/crappo/',
                     tag: 'landing-page',
-                    id: 10
+                    id: 9
                 },
                 {
                     image: '/src/assets/images/hulu-clone.jpg',
