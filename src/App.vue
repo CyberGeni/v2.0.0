@@ -3,7 +3,7 @@
     <main>
       <app-header></app-header>    
       <router-view></router-view>
-      <button class="resume"><a href="https://drive.google.com/file/d/16DWBpi7qCxY5P_kh4LrdesbpkzbijJ1t/view?usp=sharing" target="_blank">Visit my resume</a></button>
+      <button class="resume"><a href="https://drive.google.com/file/d/1Z2cYK5vw9l0tzhfS5bavWxSzBxym22MH/view?usp=sharing" target="_blank">Visit my resume</a></button>
     </main> 
     <footer>cyberGenie 2021 - 2022 &copy; Treasure Ajefu </footer>     
   </div>
