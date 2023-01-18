@@ -18,8 +18,8 @@
                     <img src="src/assets/images/vue.png" alt="Vue.js">
                 </div>
                 <div class="skill python">
-                    <p>Python</p>
-                    <img src="src/assets/images/python.png" alt="Python">
+                    <p class="mb-2">React</p>
+                    <img src="src/assets/images/react.png" alt="React">
                 </div>
                 <div class="skill github">
                     <p>Git | GitHub</p>
@@ -46,6 +46,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding: 1em;
         margin: 2em 0.1em;
         width: 100%;
