@@ -1,6 +1,6 @@
 <template>
     <div class="projects flex flex-wrap justify-center">
-        <main class="w-full max-w-[360px] m-4 bg-lighterBackground p-3 rounded-xl transition-all hover:bg-transparent animate__animated animate__jello shadow-xl" v-for="project in projects" :key="project.id">
+        <main class="hover:scale-105 w-full max-w-[360px] m-4 bg-lighterBackground p-3 rounded-xl transition-all hover:bg-transparen shadow-xl" v-for="project in projects" :key="project.id">
             <img :src="project.image" :alt="imageDescription" class="sitePreview w-full rounded">
             <div class="info px-2 py-1">
                 <h2 :key="project.id" class="text-xl sm:text-2xl w-full font-bold leading-tight my-2">{{project.title}}</h2>
@@ -21,22 +21,40 @@ export default {
         return {
             projects: [
                 {
-                    image: '/src/assets/images/hulu-clone.jpg',
-                    title: 'Crappo Crypto',
-                    description: "Creed this project as part of an online Twitter design recreation challenge.",
-                    liveLink: 'https://cybergeni.github.io/crappo/',
-                    projectInfo: 'https://github.com/cybergeni/crappo/',
+                    image: '/src/assets/images/prackage.jpg',
+                    title: 'Prackage',
+                    description: "Prackage makes it easier for you to connect, grow, evolve and enjoy the process of becoming a better you.",
+                    liveLink: 'https://prackage.com',
+                    projectInfo: '',
                     tag: 'landing-page',
-                    id: 9
+                    id: 1
+                },
+                {
+                    image: '/src/assets/images/centro.jpg',
+                    title: 'Centro DAO',
+                    description: "Find worthy DAOs to make contributions in, collaborate, and build, with our DAO explorer.",
+                    liveLink: 'https://centrodao.netlify.app',
+                    projectInfo: 'https://github.com/cybergeni/centro/',
+                    tag: 'landing-page',
+                    id: 2
+                },
+                {
+                    image: '/src/assets/images/github-api.jpg',
+                    title: 'GitHub User API',
+                    description: 'Display info of users by username, including list of repositories and further info on them.',
+                    liveLink: 'https://github-user-api-with-pagination.netlify.app/',
+                    projectInfo: 'https://github.com/CyberGeni/github-user-api-with-pagination',
+                    tag: 'api',
+                    id: 3
                 },
                 {
                     image: '/src/assets/images/hulu-clone.jpg',
                     title: 'Hulu Clone',
-                    description: "Hulu is the best way to watch your favorite shows and movies on the go. (clone)",
-                    liveLink: 'https://cybergeni.github.io/hulu-clone/',
-                    projectInfo: 'https://github.com/cybergeni/hulu-clone/',
+                    description: 'Hulu is the best way to watch your favorite shows and movies on the go. (clone)',
+                    liveLink: 'https://cybergeni.github.io/loopstudios/',
+                    projectInfo: 'https://github.com/cybergeni/loopstudios/',
                     tag: 'landing-page',
-                    id: 9
+                    id: 3
                 },
                 {
                     image: '/src/assets/images/loopstudios.png',
@@ -46,15 +64,6 @@ export default {
                     projectInfo: 'https://github.com/cybergeni/loopstudios/',
                     tag: 'landing-page',
                     id: 8
-                },
-                {
-                    image: '/src/assets/images/fayvour.png',
-                    title: 'Product Designer\'s Portfolio',
-                    description: 'A portfolio website for a Product designer with great interface and sleek animations.',
-                    liveLink: 'https://fayvour.netlify.app/',
-                    projectInfo: 'https://github.com/cybergeni/FayvourAj',
-                    tag: 'portfolio',
-                    id: 7
                 },
                 {
                     image: '/src/assets/images/riskfree.png',
