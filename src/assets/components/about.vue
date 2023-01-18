@@ -2,7 +2,7 @@
     <div>
         <main>
             <h1 class="text-2xl md:text-4xl w-full font-bold leading-tight">I'm a 17 year old Frontend UI Engineer based in Lagos, Nigeria.</h1>
-            <p class="text-secondary text-2xl md:3xl my-6 font-medium">You're looking at the portfolio of a UI engineer (by day) and technical writer (by night) with a passion for developing intuitive and visually appealing digital experiences. When Treasure isn't busy crafting clean and efficient code, you can find her penning clear and concise tutorials that helps others navigate complex technical concepts (or maybe random opinionated articles, who knows?).</p>
+            <p class="text-secondary text-2xl md:3xl my-6 font-medium">You're looking at the portfolio of a UI engineer (by day) and technical writer (by night) with a passion for developing intuitive and visually appealing digital experiences. When Treasure isn't busy crafting clean and efficient code, you can find her either contributing to open-source projects or penning clear and concise tutorials that helps others navigate complex technical concepts (or maybe random opinionated articles, who knows?).</p>
             <p class="text-secondary text-2xl md:3xl my-6 font-medium">So if you're in need of a UI engineer or technical writer with a splash of quirkiness, look no further!</p>
 
             <h1 class="text-2xl sm:text-3xl w-full font-bold leading-tight">Skills</h1>
