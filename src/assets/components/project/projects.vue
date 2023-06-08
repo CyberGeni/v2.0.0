@@ -24,7 +24,7 @@ export default {
                     image: '/src/assets/images/prackage.jpg',
                     title: 'Prackage',
                     description: "Prackage makes it easier for you to connect, grow, evolve and enjoy the process of becoming a better you.",
-                    liveLink: 'https://prackage.com',
+                    liveLink: 'https://prackage.netlify.app',
                     projectInfo: '',
                     tag: 'landing-page',
                     id: 1
