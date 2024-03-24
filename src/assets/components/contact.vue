@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="min-h-[75vh]">
         <div class="message">
             <img src="src/assets/images/emoji-fingers-crossed.png" alt="">
             <form action="https://formsubmit.co/2a7061c6ce055c5c48ea10045e956c7e" name="Contact" method="POST">
