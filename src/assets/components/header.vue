@@ -6,7 +6,7 @@
                 <div class="logo text-3xl font-medium">Treasure<span class="font-black text-5xl text-slate-500">.</span></div>
                 <!-- menu -->
                 <div class="flex space-x-3">
-                    <button @click="changeTheme()" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme" ><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
+                    <!-- <button @click="changeTheme()" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme" ><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button> -->
                 <!-- burger -->
                     <div class="burger">
                         <button  @click="toggled = !toggled;toggle()" id="navbarToggler" class="flex flex-col w-12 h-12 space-y-1 items-center justify-center rounded-full border border-white" :class="{activenav : toggled}">
@@ -45,7 +45,7 @@
                 <!-- menu -->
                 <div class="flex">
                     <div class="themeToggle">
-                        <button @click="darkTheme = !darkTheme" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button>
+                        <!-- <button @click="darkTheme = !darkTheme" class="flex items-center justify-center flex-col rounded-full border-[1px] border-white w-12 h-12"><img :src="imageLight" alt="Dark Theme" v-if="darkTheme"><img :src="imageDark" alt="Dark Theme" v-if="!darkTheme"></button> -->
                     </div>
                 </div>        
             </header>       

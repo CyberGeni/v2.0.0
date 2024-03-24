@@ -3,9 +3,9 @@
     <main>
       <app-header></app-header>    
       <router-view></router-view>
-      <button class="resume"><a href="https://drive.google.com/file/d/1Z2cYK5vw9l0tzhfS5bavWxSzBxym22MH/view?usp=sharing" target="_blank">Visit my resume</a></button>
+      <button class="resume"><a href="https://drive.google.com/file/d/1hea1eFi-OM-P7s5f4pr44tK94ZqDGEoT/view?usp=sharing" target="_blank">Visit my resume</a></button>
     </main> 
-    <footer>cyberGenie 2021 - 2022 &copy; Treasure Ajefu </footer>     
+    <footer>cyberGenie 2021 - 2024 &copy; Treasure Ajefu </footer>     
   </div>
 </template>
 

@@ -21,9 +21,9 @@
                     <p class="mb-2">React</p>
                     <img src="src/assets/images/react.png" alt="React">
                 </div>
-                <div class="skill github">
-                    <p>Git | GitHub</p>
-                    <img src="src/assets/images/github.png" alt="Github">
+                <div class="skill tailwind">
+                    <p>Tailwind</p>
+                    <img class="py-3.5" src="src/assets/images/tailwind.png" alt="Github">
                 </div>
     </div>
 </template>
